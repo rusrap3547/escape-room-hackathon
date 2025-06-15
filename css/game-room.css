@@ -1,4 +1,65 @@
 body {
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
 }
+#whole-screen-box {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+}
+
+/* Control the walls */
+.game-room-wall {
+	border: solid 2px black;
+	position: relative;
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	opacity: 0.9;
+	box-sizing: border-box;
+}
+
+.vertical-wall {
+	display: flex;
+	border: solid 1px black;
+	height: 20%;
+	width: 100%;
+}
+
+#make-walls-sideways {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.horizontal-wall {
+	display: flex;
+	border: solid 1px black;
+	height: 100%;
+	width: 100%;
+}
+
+/* Ceiling */
+
+/* Left Wall */
+#game-room-left-wall {
+	width: 40%;
+	height: 100%;
+}
+/* Back Wall */
+#game-room-back-wall {
+}
+
+/* Right Wall */
+#game-room-right-wall {
+	width: 40%;
+	height: 100%;
+}
+/* Floor */
