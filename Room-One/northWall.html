@@ -3,13 +3,24 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="northWallStyle.css" />
 		<title>Escape Room - Ch.1 Wake Up</title>
 	</head>
 	<body>
 		<div class="northWall">
-			<div class="floorOfRoom needsBorder"></div>
-			<div class="calenderOnWall needsBorder"></div>
-			<div class="windowOnWall needsBorder"></div>
+			<div class="calenderOnWall needsBorder" id="calender"></div>
+			<div class="windowOnWall needsBorder" id="theWindow">
+				<div class="theWindowBars needsBorder" id="barSection">
+					<div class="windowBar needsBorder" id="firstBar"></div>
+					<div class="windowBar needsBorder" id="secondBar"></div>
+					<div class="windowBar needsBorder" id="thirdBar"></div>
+					<div class="windowBar needsBorder" id="fourthBar"></div>
+					<div class="windowBar needsBorder" id="fifthBar"></div>
+					<div class="windowBar needsBorder" id="sixthBar"></div>
+				</div>
+				<div class="windowSill needsBorder" id="theWindowSill"></div>
+			</div>
 		</div>
+		<div class="floorOfRoom needsBorder" id="theFloor">Floor</div>
 	</body>
 </html>

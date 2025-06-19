@@ -1,18 +1,99 @@
 body {
 	width: 100vw;
 	height: 100vh;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
 }
 
 .northWall {
 	height: 100%;
 	width: auto;
 	display: flex;
+	flex-direction: row;
+	background-color: gray;
 }
 
-.floorofroom {
-	height: 15%;
+.windowOnWall {
+	width: 27%;
+	height: 40%;
+	margin-left: 55%;
+	margin-top: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	background-color: rgb(5, 23, 61);
+	position: absolute;
+}
+
+.theWindowBars {
+	height: 95%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.windowBar {
+	display: flex;
+	height: 100%;
+	width: 5%;
+	flex-direction: row;
+	align-items: space-around;
+	background-color: silver;
+}
+
+.windowSill {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	height: 5%;
+	width: 100%;
+	background-color: darkgray;
+}
+
+.calenderOnWall {
+	width: 200px;
+	height: 300px;
+	display: flex;
+	position: absolute;
+	margin: 15%;
+}
+
+#calendar {
+	max-width: 300px;
+	font-family: sans-serif;
+}
+.calendar-header {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.calendar-grid {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 5px;
+	text-align: center;
+}
+.calendar-day {
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+.calendar-day.today {
+	background-color: #f0b400;
+	color: white;
+	font-weight: bold;
+}
+
+.floorOfRoom {
+	background-color: darkgray;
+	height: 100px;
 	width: 100%;
 	border: 1px solid black;
+	display: flex;
+	justify-content: flex-end;
 }
 
 .needsBorder {
