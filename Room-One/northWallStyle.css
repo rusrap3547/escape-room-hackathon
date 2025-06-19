@@ -62,31 +62,6 @@ body {
 	margin: 15%;
 }
 
-#calendar {
-	max-width: 300px;
-	font-family: sans-serif;
-}
-.calendar-header {
-	text-align: center;
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-.calendar-grid {
-	display: grid;
-	grid-template-columns: repeat(7, 1fr);
-	gap: 5px;
-	text-align: center;
-}
-.calendar-day {
-	padding: 5px;
-	border: 1px solid #ccc;
-}
-.calendar-day.today {
-	background-color: #f0b400;
-	color: white;
-	font-weight: bold;
-}
-
 .floorOfRoom {
 	background-color: darkgray;
 	height: 100px;
@@ -98,4 +73,43 @@ body {
 
 .needsBorder {
 	border: solid 1px black;
+}
+
+/* ------ Calender Popup -------- */
+.calenderText {
+	display: none;
+	position: absolute;
+	top: 100%; /* Appear below the trigger */
+	left: 0;
+	background-color: white;
+	border: 1px solid #333;
+	padding: 10px;
+	border-radius: 8px;
+	z-index: 1001;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: give relative position to parent for proper popup positioning - Hailey fix this.*/
+.popup {
+	position: relative;
+	cursor: pointer;
+}
+img {
+	height: 100%;
+	width: 100%;
+}
+.navigationArrow {
+	height: 130px;
+	width: 200px;
+	background-color: slategray;
+}
+
+.navigationBar {
+	height: 130px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	background-color: gray;
+	justify-content: space-between;
+	border: none;
 }
