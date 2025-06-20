@@ -1,3 +1,18 @@
+// This is for the starting message
+  window.onload = () => {
+    const popup = document.getElementById('centerPopupMessage');
+
+    // Show the popup with transition
+    setTimeout(() => {
+      popup.classList.add('show');
+    }, 500);
+    popup.addEventListener('click', () => {
+      popup.classList.remove('show');
+      setTimeout(() => {
+        popup.style.display = 'none';
+      }, 500);
+    });
+  };
 // Calender Popup - Activation
 
 document.querySelector('.popup').addEventListener('click', calenderPopup);
