@@ -3,14 +3,55 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="eastWallStyle.css" />
+		<script src="../scripts/roomOne.js" defer></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const music = document.getElementById("backgroundMusic");
+
+				// Start playing music after the first user interaction
+				const startMusic = () => {
+					music.volume = 0.5; // optional: set background volume
+					music.play().catch((err) => console.log("Autoplay blocked:", err));
+					document.removeEventListener("click", startMusic);
+				};
+				document.addEventListener("click", startMusic);
+			});
+		</script>
 		<title>East Wall</title>
 	</head>
 	<body>
+		<audio src="../assets/ambieance.mp3" id="backgroundMusic"></audio>
+		<audio
+			src="../assets/footsteps-in-a-hallway-47842.mp3"
+			id="footSteps"
+		></audio>
 		<div class="eRoomContainer" id="eScreenContainer">
 			<div class="wallContainer" id="wholeWallBox">
-				<div class="shelfOnWall containerShelf"></div>
+				<!-- Shelf with some books, nothing clickable -->
+				<div class="shelfOnWall containerShelf">Shelf</div>
 			</div>
-			<div class="eRoomFloor" id="eastFloor">floor</div>
+			<div class="navigationBar needsborder" id="navSection">
+				<div class="navigationArrow needsBorder" id="arrowMoveLeft">
+					<a href="./westWall.html" class="arrowLookLeft"
+						><img
+							src="../assets/left-arrow.png"
+							alt="Left Stone arrow"
+							class="leftArrowPicture stoneArrows"
+					/></a>
+				</div>
+				<div class="navigationArrow needsBorder" id="arrowMoveRight">
+					<div class="navigationArrow needsBorder" id="arrowLookRight">
+						<a href="./eastWall.html" class="arrowLookRight"
+							><img
+								src="../assets/right-arrow.png"
+								alt="Right Stone arrow"
+								class="rightArrowPicture stoneArrows"
+						/></a>
+					</div>
+				</div>
+			</div>
 		</div>
+		<div class="eRoomFloor" id="eastFloor">floor</div>
 	</body>
 </html>
