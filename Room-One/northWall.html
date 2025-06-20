@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="northWallStyle.css" />
-		<script src="../scripts/roomOne.js" defer></script>
-		<title>Escape Room - Ch.1 Wake Up</title>
-	</head>
-	<body>
-		<div class="northWall">
-			<div class="calenderOnWall needsBorder" id="calender">
-				<div class="popup">
-					<img
-						src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F005%2F988%2F949%2Foriginal%2Fblue-calendar-icon-free-vector.jpg&f=1&nofb=1&ipt=33e7de877b936a2ca16023f22654d538360f76e42633a156bf001544020cb2e4"
-						alt="Calender"
-					/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="northWallStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&family=Frijole&family=Nosifer&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../scripts/roomOne.js" defer></script>
+    <title>Escape Room - Ch.1 Wake Up</title>
+  </head>
+  <body>
+    <div class="northWall">
+      <div class="calenderOnWall needsBorder" id="calender">
+        <div class="popup">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F005%2F988%2F949%2Foriginal%2Fblue-calendar-icon-free-vector.jpg&f=1&nofb=1&ipt=33e7de877b936a2ca16023f22654d538360f76e42633a156bf001544020cb2e4"
+            alt="Calender"
+          />
 
-					<span class="calenderText" id="myCalenderPopup"
-						><img
-							class="calenderClue"
-							src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Fcalendar-icon-transparent%2Fcalendar-icon-transparent-8.jpg&f=1&nofb=1&ipt=fe0ad2afd5b9c12da20beb955dfbd52f214c71292ea229b45f6dff42622d24df"
-							alt="calenderWithColor"
-					/></span>
-				</div>
-			</div>
-			<div class="windowOnWall needsBorder" id="theWindow">
-				<div class="theWindowBars needsBorder" id="barSection">
-					<div class="windowBar needsBorder" id="firstBar"></div>
-					<div class="windowBar needsBorder" id="secondBar"></div>
-					<div class="windowBar needsBorder" id="thirdBar"></div>
-					<div class="windowBar needsBorder" id="fourthBar"></div>
-					<div class="windowBar needsBorder" id="fifthBar"></div>
-					<div class="windowBar needsBorder" id="sixthBar"></div>
-				</div>
-				<div class="windowSill needsBorder" id="theWindowSill"></div>
-			</div>
-		</div>
-		<div class="navigationBar needsborder" id="navSection">
-			<div class="navigationArrow needsBorder" id="arrowMoveLeft">
-				<a href="./westWall.html" class="arrowLookLeft"
-					><img
-						src="../assets/left-arrow.png"
-						alt="Left Stone arrow"
-						class="leftArrowPicture stoneArrows"
-				/></a>
-			</div>
-			<div class="navigationArrow needsBorder" id="arrowMoveRight">
-				<div class="navigationArrow needsBorder" id="arrowLookRight">
-					<a href="./eastWall.html" class="arrowLookRight"
-						><img
-							src="../assets/right-arrow.png"
-							alt="Right Stone arrow"
-							class="rightArrowPicture stoneArrows"
-					/></a>
-				</div>
-			</div>
-		</div>
-		<div class="floorOfRoom needsBorder" id="theFloor">Floor</div>
-	</body>
+          <span class="calenderText" id="myCalenderPopup"
+            ><img
+              class="calenderClue"
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Fcalendar-icon-transparent%2Fcalendar-icon-transparent-8.jpg&f=1&nofb=1&ipt=fe0ad2afd5b9c12da20beb955dfbd52f214c71292ea229b45f6dff42622d24df"
+              alt="calenderWithColor"
+          /></span>
+        </div>
+      </div>
+      <div class="windowOnWall needsBorder" id="theWindow">
+        <div class="theWindowBars needsBorder" id="barSection">
+          <div class="windowBar needsBorder" id="firstBar"></div>
+          <div class="windowBar needsBorder" id="secondBar"></div>
+          <div class="windowBar needsBorder" id="thirdBar"></div>
+          <div class="windowBar needsBorder" id="fourthBar"></div>
+          <div class="windowBar needsBorder" id="fifthBar"></div>
+          <div class="windowBar needsBorder" id="sixthBar"></div>
+        </div>
+        <div class="windowSill needsBorder" id="theWindowSill"></div>
+      </div>
+    </div>
+    <div class="navigationBar needsborder" id="navSection">
+      <div class="navigationArrow needsBorder" id="arrowMoveLeft">
+        <a href="./westWall.html" class="arrowLookLeft"
+          ><img
+            src="../assets/left-arrow.png"
+            alt="Left Stone arrow"
+            class="leftArrowPicture stoneArrows"
+        /></a>
+      </div>
+      <div class="navigationArrow needsBorder" id="arrowMoveRight">
+        <div class="navigationArrow needsBorder" id="arrowLookRight">
+          <a href="./eastWall.html" class="arrowLookRight"
+            ><img
+              src="../assets/right-arrow.png"
+              alt="Right Stone arrow"
+              class="rightArrowPicture stoneArrows"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <div class="floorOfRoom needsBorder" id="theFloor">Floor</div>
+  </body>
 </html>
