@@ -49,38 +49,12 @@
 			</div>
 			<div class="eRoomFloor" id="eastFloor">floor</div>
 		</div>
+		<iframe
+			src="/audio.html"
+			style="display: none"
+			id="bgAudioFrame"
+			allow="autoplay"
+		>
+		</iframe>
 	</body>
 </html>
-<script>
-	function setupFootstepSound() {
-		const footSteps = document.getElementById("footSteps");
-		footSteps.volume = 0.5;
-
-		const arrowImages = document.querySelectorAll("img.stoneArrows");
-
-		// Wait for audio to be ready
-		footSteps.addEventListener("canplaythrough", () => {
-			const allowPlayback = () => {
-				arrowImages.forEach((img) => {
-					img.addEventListener("click", () => {
-						try {
-							// Only restart if not currently playing
-							if (!footSteps.paused) {
-								footSteps.pause();
-								footSteps.currentTime = 0;
-							}
-							footSteps.play();
-						} catch (err) {
-							console.warn("Footstep sound error:", err);
-						}
-					});
-				});
-				document.removeEventListener("click", allowPlayback);
-			};
-
-			document.addEventListener("click", allowPlayback);
-		});
-	}
-
-	setupFootstepSound();
-</script>
