@@ -3,14 +3,84 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="eastWallStyle.css" />
 		<title>East Wall</title>
 	</head>
 	<body>
+		<audio
+			src="../assets/ambieance.mp3"
+			id="backgroundMusic"
+			preload="auto"
+		></audio>
+		<audio
+			src="../assets/footStepsSound.mp3"
+			id="footSteps"
+			preload="auto"
+		></audio>
 		<div class="eRoomContainer" id="eScreenContainer">
 			<div class="wallContainer" id="wholeWallBox">
-				<div class="shelfOnWall containerShelf"></div>
+				<!-- Shelf with some books, nothing clickable -->
+				<div class="shelfOnWall containerShelf">
+					<div class="bookOne"></div>
+					<div class="bookTwo"></div>
+					<div class="bookThree"></div>
+					<div class="bookFour"></div>
+				</div>
+			</div>
+			<div class="navigationBar needsborder" id="navSection">
+				<div class="navigationArrow needsBorder" id="arrowMoveLeft">
+					<a href="./northWall.html" class="arrowLookLeft"
+						><img
+							src="../assets/left-arrow.png"
+							alt="Left Stone arrow"
+							class="leftArrowPicture stoneArrows"
+					/></a>
+				</div>
+				<div class="navigationArrow needsBorder" id="arrowMoveRight">
+					<div class="navigationArrow needsBorder" id="arrowLookRight">
+						<a href="./southWall.html" class="arrowLookRight"
+							><img
+								src="../assets/right-arrow.png"
+								alt="Right Stone arrow"
+								class="rightArrowPicture stoneArrows"
+						/></a>
+					</div>
+				</div>
 			</div>
 			<div class="eRoomFloor" id="eastFloor">floor</div>
 		</div>
 	</body>
 </html>
+<script>
+	function setupFootstepSound() {
+		const footSteps = document.getElementById("footSteps");
+		footSteps.volume = 0.5;
+
+		const arrowImages = document.querySelectorAll("img.stoneArrows");
+
+		// Wait for audio to be ready
+		footSteps.addEventListener("canplaythrough", () => {
+			const allowPlayback = () => {
+				arrowImages.forEach((img) => {
+					img.addEventListener("click", () => {
+						try {
+							// Only restart if not currently playing
+							if (!footSteps.paused) {
+								footSteps.pause();
+								footSteps.currentTime = 0;
+							}
+							footSteps.play();
+						} catch (err) {
+							console.warn("Footstep sound error:", err);
+						}
+					});
+				});
+				document.removeEventListener("click", allowPlayback);
+			};
+
+			document.addEventListener("click", allowPlayback);
+		});
+	}
+
+	setupFootstepSound();
+</script>

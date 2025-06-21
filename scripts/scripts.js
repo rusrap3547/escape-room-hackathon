@@ -10,3 +10,21 @@ const soundEffect = document.getElementById('transitionSoundEffect');
         window.location.href = 'northWall.html'; // Navigate after fade
       }, 2000);
     });
+
+
+function setupFootstepSound() {
+  const footSteps = document.getElementById('footSteps');
+  const arrowImages = document.querySelectorAll('.stoneArrows');
+  console.log("Starting Footsteps");
+  arrowImages.forEach(img => {
+    img.addEventListener('click', () => {
+      try {
+        footSteps.pause();
+        footSteps.currentTime = 0;
+        footSteps.play();
+      } catch (err) {
+        console.warn('Footstep sound error:', err);
+      }
+    });
+  });
+}
