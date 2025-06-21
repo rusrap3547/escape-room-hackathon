@@ -69,20 +69,3 @@ function playBackgroundMusic(volume = 0.5) {
     };
   };
 };
-
-function playBackgroundMusic() {
-  const music = document.getElementById('backgroundMusic');
-  if (music) {
-    music.play().catch((err) => {
-      console.warn('Autoplay blocked or error occurred:', err);
-    });
-  }
-}
-
-window.addEventListener('DOMContentLoaded', () => {
-  const arrowElements = document.querySelectorAll('.stoneArrows');
-
-  arrowElements.forEach((element) => {
-    element.addEventListener('click', playBackgroundMusic, { once: true });
-  });
-});
