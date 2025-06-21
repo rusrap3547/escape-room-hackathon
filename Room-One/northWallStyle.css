@@ -1,119 +1,119 @@
 body {
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
-	margin: 0 auto;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .northWall {
-	height: 100%;
-	width: auto;
-	display: flex;
-	flex-direction: row;
-	background-color: gray;
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: gray;
 }
 
 .windowOnWall {
-	width: 27%;
-	height: 40%;
-	margin-left: 55%;
-	margin-top: 10%;
-	display: flex;
-	flex-direction: column;
-	align-items: end;
-	background-color: rgb(5, 23, 61);
-	position: absolute;
+  width: 27%;
+  height: 40%;
+  margin-left: 55%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  background-color: rgb(5, 23, 61);
+  position: absolute;
 }
 
 .theWindowBars {
-	height: 95%;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+  height: 95%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .windowBar {
-	display: flex;
-	height: 100%;
-	width: 5%;
-	flex-direction: row;
-	align-items: space-around;
-	background-color: silver;
+  display: flex;
+  height: 100%;
+  width: 5%;
+  flex-direction: row;
+  align-items: space-around;
+  background-color: silver;
 }
 
 .windowSill {
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-	height: 5%;
-	width: 100%;
-	background-color: darkgray;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 5%;
+  width: 100%;
+  background-color: darkgray;
 }
 
 .calenderOnWall {
-	width: 200px;
-	height: 300px;
-	display: flex;
-	position: absolute;
-	margin: 15%;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  position: absolute;
+  margin: 15%;
 }
 
 .floorOfRoom {
-	background-color: darkgray;
-	height: 100px;
-	width: 100%;
-	border: 1px solid black;
-	display: flex;
-	justify-content: flex-end;
+  background-color: darkgray;
+  height: 100px;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .needsBorder {
-	border: solid 1px black;
+  border: solid 1px black;
 }
 
 /* ------ Calender Popup -------- */
 .calenderText {
-	display: none;
-	position: absolute;
-	top: 100%; /* Appear below the trigger */
-	left: 0;
-	background-color: white;
-	border: 1px solid #333;
-	padding: 10px;
-	border-radius: 8px;
-	z-index: 1001;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  position: absolute;
+  top: 100%; /* Appear below the trigger */
+  left: 0;
+  background-color: white;
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 1001;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Optional: give relative position to parent for proper popup positioning - Hailey fix this.*/
 .popup {
-	position: relative;
-	cursor: pointer;
+  position: relative;
+  cursor: pointer;
 }
 img {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 /* --------------- Arrow section ------------------- */
 .navigationArrow {
-	height: 130px;
-	width: 200px;
-	background-color: slategray;
+  height: 130px;
+  width: 200px;
+  background-color: slategray;
 }
 
 .navigationBar {
-	height: 130px;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	background-color: gray;
-	justify-content: space-between;
-	border: none;
+  height: 130px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: gray;
+  justify-content: space-between;
+  border: none;
 }
 
 /* -------- Note popup as taunt ------------- */
