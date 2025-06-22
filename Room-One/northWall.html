@@ -15,13 +15,16 @@
   </head>
   <body>
     <div class="northWall">
-      <div id="centerPopupMessage">Welcome to the next screen!</div>
+      <div id="centerPopupMessage">
+        <p class="closeButton">[x]</p>
+        <h1 class="noteContent" id="noteTitle">NOTE TITLE</h1>
+        <p class="noteContent" id="lineOne">Note words line one</p>
+        <p class="noteContent" id="lineTwo">Note words line two</p>
+        <p class="noteContent" id="lineThree">Note words line three</p>
+      </div>
       <div class="calenderOnWall needsBorder" id="calender">
         <div class="popup">
-          <img
-            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F005%2F988%2F949%2Foriginal%2Fblue-calendar-icon-free-vector.jpg&f=1&nofb=1&ipt=33e7de877b936a2ca16023f22654d538360f76e42633a156bf001544020cb2e4"
-            alt="Calender"
-          />
+          <img src="../assets/calendar-cover.png" alt="Calender" />
 
           <span class="calenderText" id="myCalenderPopup"
             ><img
@@ -43,26 +46,29 @@
         <div class="windowSill needsBorder" id="theWindowSill"></div>
       </div>
     </div>
-    <div class="navigationBar needsborder" id="navSection">
-      <div class="navigationArrow needsBorder" id="arrowMoveLeft">
-        <a href="./westWall.html" class="arrowLookLeft"
-          ><img
+    <div class="navigationBar" id="navSection">
+      <div class="navigationArrow" id="arrowMoveLeft">
+        <a href="./westWall.html" class="arrowLookLeft">
+          <img
             src="../assets/left-arrow.png"
             alt="Left Stone arrow"
-            class="leftArrowPicture stoneArrows"
-        /></a>
+            class="stoneArrows"
+            id="leftArrowPicture"
+          />
+        </a>
       </div>
-      <div class="navigationArrow needsBorder" id="arrowMoveRight">
-        <div class="navigationArrow needsBorder" id="arrowLookRight">
+      <div class="navigationArrow" id="arrowMoveRight">
+        <div class="navigationArrow" id="arrowLookRight">
           <a href="./eastWall.html" class="arrowLookRight"
             ><img
               src="../assets/right-arrow.png"
               alt="Right Stone arrow"
-              class="rightArrowPicture stoneArrows"
+              class="stoneArrows"
+              id="rightArrowPicture"
           /></a>
         </div>
       </div>
     </div>
-    <div class="floorOfRoom needsBorder" id="theFloor">Floor</div>
+    <div class="floorOfRoom needsBorder" id="theFloor"></div>
   </body>
 </html>

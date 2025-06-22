@@ -6,6 +6,18 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  background: conic-gradient(at 78% 3%, #0000 75%, #cdbc99 0),
+    conic-gradient(at 78% 3%, #0000 75%, #cdbc99 0) 30px 30px,
+    conic-gradient(at 78% 3%, #0000 75%, #cdbc99 0) calc(2 * 30px)
+      calc(2 * 30px),
+    conic-gradient(at 78% 3%, #0000 75%, #cdbc99 0) calc(3 * 30px)
+      calc(3 * 30px),
+    conic-gradient(at 3% 78%, #0000 75%, #cdbc99 0) 0 calc(3 * 30px),
+    conic-gradient(at 3% 78%, #0000 75%, #cdbc99 0) 30px 0,
+    conic-gradient(at 3% 78%, #0000 75%, #cdbc99 0) calc(2 * 30px) 30px,
+    conic-gradient(at 3% 78%, #0000 75%, #cdbc99 0) calc(3 * 30px)
+      calc(2 * 30px) #8e4738;
+  background-size: calc(4 * 30px) calc(4 * 30px);
 }
 
 .northWall {
@@ -13,7 +25,6 @@ body {
   width: auto;
   display: flex;
   flex-direction: row;
-  background-color: gray;
 }
 
 .windowOnWall {
@@ -24,7 +35,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: end;
-  background-color: rgb(5, 23, 61);
+  /* background-color: rgb(5, 23, 61); */
+  background-image: url("../assets/lightning.jpg");
+  background-position: right;
+  background-size: 200%;
+  background-repeat: no-repeat;
   position: absolute;
 }
 
@@ -43,6 +58,7 @@ body {
   flex-direction: row;
   align-items: space-around;
   background-color: silver;
+  box-shadow: 4px 0 8px black;
 }
 
 .windowSill {
@@ -52,19 +68,22 @@ body {
   height: 5%;
   width: 100%;
   background-color: darkgray;
+  box-shadow: 2px 2px 4px black;
 }
 
 .calenderOnWall {
-  width: 200px;
-  height: 300px;
+  width: 150px;
+  height: 225px;
   display: flex;
   position: absolute;
-  margin: 15%;
+  margin-left: 15%;
+  margin-top: 10%;
+  box-shadow: 3px 3px 6px black;
 }
 
 .floorOfRoom {
   background-color: darkgray;
-  height: 100px;
+  height: 150px;
   width: 100%;
   border: 1px solid black;
   display: flex;
@@ -103,7 +122,8 @@ img {
 .navigationArrow {
   height: 130px;
   width: 200px;
-  background-color: slategray;
+  clip-path: margin-box;
+  /* background-color: rgba(112, 128, 144, 0.219); */
 }
 
 .navigationBar {
@@ -111,42 +131,59 @@ img {
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: gray;
+  /* background-color: gray; */
   justify-content: space-between;
   border: none;
+}
+
+.stoneArrows {
+  width: 300px;
+  height: 250px;
+  margin-top: -30%;
+  margin-left: -25%;
 }
 
 /* -------- Note popup as taunt ------------- */
 /* html,
 body {
-	margin: 0;
-	height: 100%;
-	width: 100%;
-	background-color: black;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 } */
 
-/* Update this as you want Hailey */
 #centerPopupMessage {
-	background: white;
-	padding: 5%;
-	border-radius: 5%;
-	box-shadow: 0 0 5% rgba(0, 0, 0, 0.5);
-	font-size: 120%;
-	text-align: center;
-	opacity: 0;
-	transform: scale(0.9);
-	transition: all 0.5s ease;
-	width: 50%;
-	max-width: 600px;
-	z-index: 9999; /* 🧱 Keeps it in the foreground */
-	position: relative; /* Needed for z-index to apply properly */
-	cursor: pointer; /* 👆 Indicates interactivity */
+  background-image: url("../assets/note-background.avif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border-radius: 2%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.5s ease;
+  top: 20%;
+  left: 40%;
+  height: 400px;
+  z-index: 9999; /* 🧱 Keeps it in the foreground */
+  position: relative; /* Needed for z-index to apply properly */
+  cursor: pointer; /* 👆 Indicates interactivity */
 }
 
 #centerPopupMessage.show {
-	opacity: 1;
-	transform: scale(1);
+  opacity: 1;
+  transform: scale(1);
+}
+
+.closeButton {
+  text-align: right;
+}
+
+.noteContent {
+  font-family: "Frijole", system-ui;
 }
