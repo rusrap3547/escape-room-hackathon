@@ -13,8 +13,55 @@ body {
 	padding: 0;
 	flex-direction: column;
 }
+
+/* ------ Attempt at making a bed ------ */
+#makeTheBed {
+	display: flex;
+	position: absolute;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	border: solid 1px black;
+	margin-bottom: 100px;
+}
+.bed-frame {
+	width: 300px;
+	height: 150px;
+	background-color: #3e2723; /* Dark brown wood */
+	border-radius: 10px;
+	position: relative;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mattress {
+	width: 280px;
+	height: 100px;
+	background-color: #ffffff;
+	position: relative;
+	border-radius: 8px;
+}
+
+.pillow {
+	width: 80px;
+	height: 30px;
+	background-color: #e0e0e0;
+	position: relative;
+	border-radius: 5px;
+}
+
+.blanket {
+	width: 180px;
+	height: 60px;
+	background-color: #90caf9; /* Soft blue */
+	position: relative;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+/* ------------  WALL SECTION ------------ */
 .westWallSection {
-	height: 90%;
+	height: 100%;
 	width: 100%;
 	background-color: lightgray;
 	display: flex;
@@ -36,7 +83,7 @@ body {
 #navigationBar {
 	display: flex;
 	height: 130px;
-	width: 220px;
+	width: 100%;
 	flex-direction: row;
 }
 .navigationArrow {
