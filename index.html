@@ -10,10 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap"
       rel="stylesheet"
     />
-    <script src="scripts/scripts.js"></script>
+    <script src="/scripts/scripts.js"></script>
     <title>Escape Room!</title>
   </head>
-  <!-- How are you deciding what's class and what's an id? -->
   <body>
     <div class="page-container" id="startPage">
       <div class="content">
@@ -21,7 +20,18 @@
           <h1>Welcome to the Escape Room!</h1>
           <p>Can you solve the puzzles and escape?</p>
         </div>
-        <a href="./Room-One/northWall.html" id="enterTransitionButton">Enter</a>
+        <div class="startButton">
+          <a href="./Room-One/northWall.html" id="enterTransitionButton"
+            >Enter</a
+          >
+        </div>
+      </div>
+      <div class="unicorn">
+        <img src="./assets/unicorn-start.png" alt="Scared Unicorn" />
+        <div class="unicornEyes">
+          <div class="eyeLeft"></div>
+          <div class="eyeRight"></div>
+        </div>
       </div>
       <div id="screenFadeOverlay"></div>
       <audio id="transitionSoundEffect" src="click.mp3" preload="auto"></audio>
