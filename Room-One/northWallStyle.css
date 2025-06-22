@@ -169,6 +169,7 @@ body {
   transition: all 0.5s ease;
   top: 20%;
   left: 40%;
+  width: 300px;
   height: 400px;
   z-index: 9999; /* 🧱 Keeps it in the foreground */
   position: relative; /* Needed for z-index to apply properly */
@@ -186,4 +187,19 @@ body {
 
 .noteContent {
   font-family: "Frijole", system-ui;
+}
+
+.unicornCrossBones {
+  justify-self: center;
+  width: 170px;
+  height: 110px;
+  bottom: 20px;
+  /* border: 2px solid red; */
+  clip-path: margin-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/unicornPirate.png");
+  background-position: center center;
+  background-size: cover;
 }

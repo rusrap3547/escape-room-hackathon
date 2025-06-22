@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="southWallStyle.css" />
-		<script src="/scripts/scripts.js"></script>
-		<title>Ch.1 South Room</title>
-	</head>
-	<body>
-		<div class="wallContainer roomBox" id="wholeWindow">
-			<!-- Wanna see if you can make a camera or something? -->
-			<div class="southernWallContainer southWallSection" id="southWall">
-				<!-- Giant steel door with a padlock, need code using Calender and Book -->
-				<div class="exitDoor doorSection" id="cellDoorExit">
-					door
-					<div class="doorPadlock passwordSolution" id="firstPuzzle">
-						padlock
-					</div>
-				</div>
-				<!-- This section is for moving the rooms -->
-				<div class="navigationSection" id="navigationBar">
-					<div class="navigationArrow needsBorder" id="arrowMoveLeft">
-						<a href="../Room-One/eastWall.html" class="mapChangeArrow">
-							<img
-								src="../assets/left-arrow.png"
-								alt="Left Stone arrow"
-								class="leftArrowPicture stoneArrows"
-							/>
-						</a>
-					</div>
-					<div class="navigationArrow needsBorder" id="arrowMoveRight">
-						<a href="./westWall.html" class="mapChangeArrow">
-							<img
-								src="/assets/right-arrow.png"
-								alt="Right Stone arrow"
-								class="rightArrowPicture stoneArrows"
-							/>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="southernFloor southFloorContainer" id="southFloor"></div>
-		</div>
-		<iframe
-			src="/audio.html"
-			style="display: none"
-			id="bgAudioFrame"
-			allow="autoplay"
-		>
-		</iframe>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="southWallStyle.css" />
+    <link rel="stylesheet" href="../css/roomOneGlobals.css" />
+    <script src="/scripts/scripts.js"></script>
+    <title>Ch.1 South Room</title>
+  </head>
+  <body>
+    <div class="wallContainer roomBox" id="wholeWindow">
+      <!-- Wanna see if you can make a camera or something? -->
+      <div class="southernWallContainer southWallSection" id="southWall">
+        <!-- Giant steel door with a padlock, need code using Calender and Book -->
+        <div class="exitDoor doorSection" id="cellDoorExit">
+          door
+          <div class="doorPadlock passwordSolution" id="firstPuzzle">
+            padlock
+          </div>
+        </div>
+        <!-- This section is for moving the rooms -->
+        <div class="navigationBar" id="navigationSection">
+          <div class="navigationArrow" id="arrowMoveLeft">
+            <a href="../Room-One/eastWall.html" class="mapChangeArrow">
+              <img
+                src="../assets/left-arrow.png"
+                alt="Left Stone arrow"
+                class="stoneArrows"
+                id="leftArrowPicture"
+              />
+            </a>
+          </div>
+          <div class="navigationArrow" id="arrowMoveRight">
+            <a href="./westWall.html" class="mapChangeArrow">
+              <img
+                src="/assets/right-arrow.png"
+                alt="Right Stone arrow"
+                class="stoneArrows"
+                id="rightArrowPicture"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="floorOfRoom" id="southFloor"></div>
+    </div>
+    <iframe
+      src="/audio.html"
+      style="display: none"
+      id="bgAudioFrame"
+      allow="autoplay"
+    >
+    </iframe>
+  </body>
 </html>
