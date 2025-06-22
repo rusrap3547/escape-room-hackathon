@@ -1,63 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="eastWallStyle.css" />
-    <link rel="stylesheet" href="../css/roomOneGlobals.css" />
-    <title>East Wall</title>
-  </head>
-  <body>
-    <audio
-      src="../assets/ambieance.mp3"
-      id="backgroundMusic"
-      preload="auto"
-    ></audio>
-    <audio
-      src="../assets/footStepsSound.mp3"
-      id="footSteps"
-      preload="auto"
-    ></audio>
-    <div class="eRoomContainer" id="eScreenContainer">
-      <div class="wallContainer" id="wholeWallBox">
-        <!-- Shelf with some books, nothing clickable -->
-        <div class="shelfOnWall containerShelf">
-          <div class="bookOne"></div>
-          <div class="bookTwo"></div>
-          <div class="bookThree"></div>
-          <div class="bookFour"></div>
-        </div>
-      </div>
-      <div class="navigationBar" id="navSection">
-        <div class="navigationArrow" id="arrowMoveLeft">
-          <a href="./northWall.html" class="arrowLookLeft"
-            ><img
-              src="../assets/left-arrow.png"
-              alt="Left Stone arrow"
-              class="stoneArrows"
-              id="leftArrowPicture"
-          /></a>
-        </div>
-        <div class="navigationArrow" id="arrowMoveRight">
-          <div class="navigationArrow" id="arrowLookRight">
-            <a href="./southWall.html" class="arrowLookRight"
-              ><img
-                src="../assets/right-arrow.png"
-                alt="Right Stone arrow"
-                class="stoneArrows"
-                id="rightArrowPicture"
-            /></a>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="eastWallStyle.css" />
+		<link rel="stylesheet" href="../css/roomOneGlobals.css" />
+		<title>East Wall</title>
+	</head>
+	<body>
+		<audio
+			src="../assets/ambieance.mp3"
+			id="backgroundMusic"
+			preload="auto"
+		></audio>
+		<audio
+			src="../assets/footStepsSound.mp3"
+			id="footSteps"
+			preload="auto"
+		></audio>
+		<div class="eRoomContainer" id="eScreenContainer">
+			<div class="wallContainer" id="wholeWallBox">
+				<!-- Shelf with some books, nothing clickable -->
+				<div class="shelfOnWall containerShelf">
+					<!-- Add the lopped off Unicorn head here. -->
+					<div class="unicornHead hintLocation" id="deadUnicorn"></div>
+					<div class="bookOne"></div>
+					<div class="bookTwo"></div>
+					<div class="bookThree"></div>
+					<div class="bookFour"></div>
+				</div>
+        <div class="chainContainer" id="wallChains">
+          <div class="leftChain" id="leftChainBox">
+            <div class="chainLink" id="firstLink"></div>
+            <div class="chainLink" id="secondLink"></div>
+            <div class="chainLink" id="thirdLink"></div>
+            <div class="handCuff" id="leftCuff"></div>
           </div>
+          <div class="rightChain" id="rightChainBox">
+            <div class="chainLink" id="fourthLink"></div>
+            <div class="chainLink" id="fifthLink"></div>
+            <div class="chainLink" id="sixthLink"></div>
+            <div class="handCuff" id="rightCuff"></div>
         </div>
-      </div>
-      <div class="floorOfRoom" id="eastFloor"></div>
-    </div>
-    <iframe
-      src="/audio.html"
-      style="display: none"
-      id="bgAudioFrame"
-      allow="autoplay"
-    >
-    </iframe>
-  </body>
+			</div>
+			<div class="navigationBar" id="navSection">
+				<div class="navigationArrow" id="arrowMoveLeft">
+					<a href="./northWall.html" class="arrowLookLeft"
+						><img
+							src="../assets/left-arrow.png"
+							alt="Left Stone arrow"
+							class="stoneArrows"
+							id="leftArrowPicture"
+					/></a>
+				</div>
+				<div class="navigationArrow" id="arrowMoveRight">
+					<div class="navigationArrow" id="arrowLookRight">
+						<a href="./southWall.html" class="arrowLookRight"
+							><img
+								src="../assets/right-arrow.png"
+								alt="Right Stone arrow"
+								class="stoneArrows"
+								id="rightArrowPicture"
+						/></a>
+					</div>
+				</div>
+			</div>
+			<div class="floorOfRoom" id="eastFloor"></div>
+		</div>
+		<iframe
+			src="/audio.html"
+			style="display: none"
+			id="bgAudioFrame"
+			allow="autoplay"
+		>
+		</iframe>
+	</body>
 </html>
