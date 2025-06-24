@@ -1,15 +1,17 @@
 const enterButton = document.getElementById("enterTransitionButton");
 const fadeOverlay = document.getElementById("screenFadeOverlay");
 const soundEffect = document.getElementById("transitionSoundEffect");
+const firstLevelChange = enterButton.getAttribute("href");
 
 enterButton.addEventListener("click", (e) => {
   e.preventDefault();
   soundEffect.play(); // Play the transition sound
   fadeOverlay.style.opacity = 1; // Begin fade to black
   setTimeout(() => {
-    window.location.href = "northWall.html"; // Navigate after fade
+    window.location.href = "/Room-One/northWall.html";
   }, 2000);
 });
+
 
 function setupFootstepSound() {
   const footSteps = document.getElementById("footSteps");
