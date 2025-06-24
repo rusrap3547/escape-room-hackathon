@@ -29,3 +29,25 @@ function setupFootstepSound() {
 }
 
 // Sparkle Trail Cursor
+document.addEventListener('mousemove', (e) => {
+  const sparkle = document.createElement('div');
+  sparkle.className = 'unicornSparkle';
+
+  // Random pastel color
+  const pastelColors = ['#ffb3f6', '#b3f0ff', '#ffd1b3', '#e0b3ff', '#b3ffcc'];
+  const color = pastelColors[Math.floor(Math.random() * pastelColors.length)];
+  sparkle.style.backgroundColor = color;
+
+  // Random position offset for floaty feel
+  const offsetX = (Math.random() - 0.5) * 10;
+  const offsetY = (Math.random() - 0.5) * 10;
+
+  sparkle.style.left = `${e.clientX + offsetX}px`;
+  sparkle.style.top = `${e.clientY + offsetY}px`;
+
+  document.body.appendChild(sparkle);
+
+  setTimeout(() => {
+    sparkle.remove();
+  }, 700); // sparkle duration
+});

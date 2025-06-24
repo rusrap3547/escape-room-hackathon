@@ -1,24 +1,10 @@
 // This is for the starting message
 window.onload = () => {
   const popup = document.getElementById('centerPopupMessage');
-  // Check if the popup has been shown before
-  if (!localStorage.getItem('popupShown')) {
-    // Show the popup with transition
-    setTimeout(() => {
-      popup.classList.add('show');
-    }, 500);
-    popup.addEventListener('click', () => {
-      popup.classList.remove('show');
-      setTimeout(() => {
-        popup.style.display = 'none';
-      }, 500);
-    });
-
-    // Set a flag in local storage to indicate that the popup has been shown
-    localStorage.setItem('popupShown', 'true');
-  } else {
-    popup.style.display = 'none';
-  }
+  popup.classList.add('show');
+  popup.addEventListener('click', () => {
+    popup.classList.remove('show');
+  });
 };
 
 // Calender Popup - Activation

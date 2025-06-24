@@ -1,154 +1,180 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-image: url("../assets/cutesy-background.webp");
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  cursor: url("../assets/magic-wand.png"), auto;
+	margin: 0;
+	padding: 0;
+	background-image: url("../assets/cutesy-background.webp");
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	cursor: url("../assets/magic-wand.png"), auto;
 }
 
 #startPage {
-  width: 100%;
-  height: 100%;
-  gap: 20px;
+	width: 100%;
+	height: 100%;
+	gap: 20px;
 }
 
 .startingText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: "Emilys Candy", cursive, serif;
-  color: magenta;
-  background-color: #ffc8eacc;
-  padding: 30px;
-  border: 5px magenta dotted;
-  width: 40%;
-  align-self: center;
-  margin-top: 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "Emilys Candy", cursive, serif;
+	color: magenta;
+	background-color: #ffc8eacc;
+	padding: 30px;
+	border: 5px magenta dotted;
+	width: 40%;
+	align-self: center;
+	margin-top: 15%;
 }
 
 h1 {
-  font-size: 40px;
-  text-align: center;
+	font-size: 40px;
+	text-align: center;
 }
 
 p {
-  font-size: 20px;
+	font-size: 20px;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  transition: background-color 2s ease;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	transition: background-color 2s ease;
 }
 
 #screenFadeOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0;
-  transition: opacity 2s ease;
-  pointer-events: none;
-  z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0;
+	transition: opacity 2s ease;
+	pointer-events: none;
+	z-index: 10;
 }
 
 #enterTransitionButton {
-  align-self: center;
-  width: 100px;
-  text-align: center;
-  padding: 20px;
-  border-radius: 20%;
-  font-size: 20px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: magenta;
-  border: 3px #fcb7c3 solid;
-  background-color: #ffc8eacc;
+	align-self: center;
+	width: 100px;
+	text-align: center;
+	padding: 20px;
+	border-radius: 20%;
+	font-size: 20px;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	color: magenta;
+	border: 3px #fcb7c3 solid;
+	background-color: #ffc8eacc;
 }
 
 #enterTransitionButton:hover {
-  box-shadow: 4px 4px 8px rgb(187, 142, 149);
+	box-shadow: 4px 4px 8px rgb(187, 142, 149);
 }
 
 .startButton {
-  align-self: center;
+	align-self: center;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
 }
 
 .unicorn {
-  position: absolute;
-  width: 400px;
-  bottom: 0;
-  right: 0;
+	position: absolute;
+	width: 400px;
+	bottom: 0;
+	right: 0;
 }
 
 .unicorn img {
-  width: 100%;
+	width: 100%;
 }
 
 .unicornEyes {
-  position: absolute;
-  /* border: 2px solid red; */
-  width: 120px;
-  height: 60px;
-  z-index: 99;
-  top: 130px;
-  left: 100px;
+	position: absolute;
+	/* border: 2px solid red; */
+	width: 120px;
+	height: 60px;
+	z-index: 99;
+	top: 130px;
+	left: 100px;
 }
 
 .unicornEyes div {
-  width: 17px;
-  height: 25px;
-  background-color: #4d3d24;
-  border-radius: 50%;
-  position: absolute;
-  rotate: 10deg;
+	width: 17px;
+	height: 25px;
+	background-color: #4d3d24;
+	border-radius: 50%;
+	position: absolute;
+	rotate: 10deg;
 }
 
 .eyeLeft {
-  top: 17px;
-  left: 30px;
-  /* left: 13px; */
-  animation: moveLeftEye 4s ease-in-out infinite;
+	top: 17px;
+	left: 30px;
+	/* left: 13px; */
+	animation: moveLeftEye 4s ease-in-out infinite;
 }
 
 @keyframes moveLeftEye {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-15px);
-  }
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(-15px);
+	}
 }
 
 .eyeRight {
-  top: 20px;
-  right: 10px;
-  /* right: 36px; */
-  animation: moveRightEye 4s ease-in-out infinite;
+	top: 20px;
+	right: 10px;
+	/* right: 36px; */
+	animation: moveRightEye 4s ease-in-out infinite;
 }
 
 @keyframes moveRightEye {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-25px);
-  }
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(-25px);
+	}
+}
+
+/* ===== Mouse Over Glitter - Unicorn Sparkles ==== */
+.unicornSparkle {
+	position: fixed;
+	width: 10px;
+	height: 10px;
+	background-color: pink;
+	border-radius: 50%;
+	pointer-events: none;
+	z-index: 9999;
+	opacity: 1;
+	animation: sparkleFloat 0.7s ease-out forwards;
+	box-shadow: 0 0 10px white;
+	transform: rotate(0deg);
+}
+
+@keyframes sparkleFloat {
+	0% {
+		transform: scale(1) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1.5) translateY(-20px) rotate(360deg);
+		opacity: 0;
+	}
 }
