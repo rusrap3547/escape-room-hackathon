@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const closePopup = document.getElementById('closePopup');
   const submitCombo = document.getElementById('submitCombo');
   const correctCombo = ['1','7','2','4'];
+  let isDoorUnlocked = false;
 
   const dials = [
     document.getElementById('dial1'),
@@ -76,6 +77,15 @@ document.addEventListener('DOMContentLoaded', () => {
     lockpopup.style.display = 'none';
   });
 
+  document.getElementById('doorToHallway').addEventListener('click',(e) => {
+    if (!isDoorUnlocked) {
+      e.preventDefault();
+      alert("The door is locked, you can't get out!");
+    } else {
+      window.location.href = "../Hall-Way/hallWay.html";
+    }
+  });
+
   // Submit combination
   submitCombo.addEventListener('click', () => {
     const entered = dials.map(d => d.value);
@@ -83,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('Unlocked!');
       lockpopup.style.display = 'none';
       padlockIcon.textContent = '🔓';
+      let isDoorUnlocked = true;
       // Additional: trigger door animation or unlock behavior here
     } else {
       alert('Incorrect combination!');
