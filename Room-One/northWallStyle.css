@@ -1,146 +1,146 @@
 body {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  background: conic-gradient(at 78% 3%, #0000 75%, #cdbc99 0),
-    conic-gradient(at 78% 3%, #0000 75%, #cdbc99 0) 30px 30px,
-    conic-gradient(at 78% 3%, #0000 75%, #cdbc99 0) calc(2 * 30px)
-      calc(2 * 30px),
-    conic-gradient(at 78% 3%, #0000 75%, #cdbc99 0) calc(3 * 30px)
-      calc(3 * 30px),
-    conic-gradient(at 3% 78%, #0000 75%, #cdbc99 0) 0 calc(3 * 30px),
-    conic-gradient(at 3% 78%, #0000 75%, #cdbc99 0) 30px 0,
-    conic-gradient(at 3% 78%, #0000 75%, #cdbc99 0) calc(2 * 30px) 30px,
-    conic-gradient(at 3% 78%, #0000 75%, #cdbc99 0) calc(3 * 30px)
-      calc(2 * 30px) #8e4738;
-  background-size: calc(4 * 30px) calc(4 * 30px);
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	background: conic-gradient(at 78% 3%, #0000 75%, #cdbc99 0),
+		conic-gradient(at 78% 3%, #0000 75%, #cdbc99 0) 30px 30px,
+		conic-gradient(at 78% 3%, #0000 75%, #cdbc99 0) calc(2 * 30px)
+			calc(2 * 30px),
+		conic-gradient(at 78% 3%, #0000 75%, #cdbc99 0) calc(3 * 30px)
+			calc(3 * 30px),
+		conic-gradient(at 3% 78%, #0000 75%, #cdbc99 0) 0 calc(3 * 30px),
+		conic-gradient(at 3% 78%, #0000 75%, #cdbc99 0) 30px 0,
+		conic-gradient(at 3% 78%, #0000 75%, #cdbc99 0) calc(2 * 30px) 30px,
+		conic-gradient(at 3% 78%, #0000 75%, #cdbc99 0) calc(3 * 30px)
+			calc(2 * 30px) #8e4738;
+	background-size: calc(4 * 30px) calc(4 * 30px);
 }
 
 .northWall {
-  height: 100%;
-  width: auto;
-  display: flex;
-  flex-direction: row;
+	height: 100%;
+	width: auto;
+	display: flex;
+	flex-direction: row;
 }
 
 .windowOnWall {
-  width: 27%;
-  height: 40%;
-  margin-left: 55%;
-  margin-top: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  /* background-color: rgb(5, 23, 61); */
-  background-image: url("../assets/lightning.jpg");
-  background-position: right;
-  background-size: 200%;
-  background-repeat: no-repeat;
-  position: absolute;
+	width: 27%;
+	height: 40%;
+	margin-left: 55%;
+	margin-top: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	/* background-color: rgb(5, 23, 61); */
+	background-image: url("../assets/lightning.jpg");
+	background-position: right;
+	background-size: 200%;
+	background-repeat: no-repeat;
+	position: absolute;
 }
 
 .theWindowBars {
-  height: 95%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+	height: 95%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .windowBar {
-  display: flex;
-  height: 100%;
-  width: 5%;
-  flex-direction: row;
-  align-items: space-around;
-  background-color: silver;
-  box-shadow: 4px 0 8px black;
+	display: flex;
+	height: 100%;
+	width: 5%;
+	flex-direction: row;
+	align-items: space-around;
+	background-color: silver;
+	box-shadow: 4px 0 8px black;
 }
 
 .windowSill {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 5%;
-  width: 100%;
-  background-color: darkgray;
-  box-shadow: 2px 2px 4px black;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	height: 5%;
+	width: 100%;
+	background-color: darkgray;
+	box-shadow: 2px 2px 4px black;
 }
 
 .calenderOnWall {
-  width: 150px;
-  height: 225px;
-  display: flex;
-  position: absolute;
-  margin-left: 15%;
-  margin-top: 10%;
-  box-shadow: 3px 3px 6px black;
+	width: 150px;
+	height: 225px;
+	display: flex;
+	position: absolute;
+	margin-left: 15%;
+	margin-top: 10%;
+	box-shadow: 3px 3px 6px black;
 }
 
 .floorOfRoom {
-  background-color: darkgray;
-  height: 150px;
-  width: 100%;
-  border: 1px solid black;
-  display: flex;
-  justify-content: flex-end;
+	background-color: darkgray;
+	height: 150px;
+	width: 100%;
+	border: 1px solid black;
+	display: flex;
+	justify-content: flex-end;
 }
 
 .needsBorder {
-  border: solid 1px black;
+	border: solid 1px black;
 }
 
 /* ------ Calender Popup -------- */
 .calenderText {
-  display: none;
-  position: absolute;
-  top: 100%; /* Appear below the trigger */
-  left: 0;
-  background-color: white;
-  border: 1px solid #333;
-  padding: 10px;
-  border-radius: 8px;
-  z-index: 1001;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	display: none;
+	position: absolute;
+	top: 100%; /* Appear below the trigger */
+	left: 0;
+	background-color: white;
+	border: 1px solid #333;
+	padding: 10px;
+	border-radius: 8px;
+	z-index: 1001;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Optional: give relative position to parent for proper popup positioning - Hailey fix this.*/
 .popup {
-  position: relative;
-  cursor: pointer;
+	position: relative;
+	cursor: pointer;
 }
 img {
-  height: 100%;
-  width: 100%;
+	height: 100%;
+	width: 100%;
 }
 
 /* --------------- Arrow section ------------------- */
 .navigationArrow {
-  height: 130px;
-  width: 200px;
-  clip-path: margin-box;
-  /* background-color: rgba(112, 128, 144, 0.219); */
+	height: 130px;
+	width: 200px;
+	clip-path: margin-box;
+	/* background-color: rgba(112, 128, 144, 0.219); */
 }
 
 .navigationBar {
-  height: 130px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  /* background-color: gray; */
-  justify-content: space-between;
-  border: none;
+	height: 130px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	/* background-color: gray; */
+	justify-content: space-between;
+	border: none;
 }
 
 .stoneArrows {
-  width: 300px;
-  height: 250px;
-  margin-top: -30%;
-  margin-left: -25%;
+	width: 300px;
+	height: 250px;
+	margin-top: -30%;
+	margin-left: -25%;
 }
 
 /* -------- Note popup as taunt ------------- */
@@ -156,50 +156,52 @@ body {
 } */
 
 #centerPopupMessage {
-  background-image: url("../assets/note-background.avif");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 20px;
-  border-radius: 2%;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  opacity: 0;
-  transform: scale(0.9);
-  transition: all 0.5s ease;
-  top: 20%;
-  left: 40%;
-  width: 300px;
-  height: 400px;
-  z-index: 9999; /* 🧱 Keeps it in the foreground */
-  position: relative; /* Needed for z-index to apply properly */
-  cursor: pointer; /* 👆 Indicates interactivity */
+	background-image: url("../assets/note-background.avif");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 20px;
+	border-radius: 2%;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	opacity: 0;
+	transform: scale(0.9);
+	transition: opacity 0.6s ease, transform 0.6s ease;
+	top: 20%;
+	left: 40%;
+	width: 300px;
+	height: 400px;
+	z-index: 9999;
+	position: absolute;
+	cursor: pointer;
+	display: none;
 }
 
 #centerPopupMessage.show {
-  opacity: 1;
-  transform: scale(1);
+	opacity: 1;
+	transform: scale(1);
+	display: block;
 }
 
 .closeButton {
-  text-align: right;
+	text-align: right;
 }
 
 .noteContent {
-  font-family: "Frijole", system-ui;
+	font-family: "Frijole", system-ui;
 }
 
 .unicornCrossBones {
-  justify-self: center;
-  width: 170px;
-  height: 110px;
-  bottom: 20px;
-  /* border: 2px solid red; */
-  clip-path: margin-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../assets/unicornPirate.png");
-  background-position: center center;
-  background-size: cover;
+	justify-self: center;
+	width: 170px;
+	height: 110px;
+	bottom: 20px;
+	/* border: 2px solid red; */
+	clip-path: margin-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../assets/unicornPirate.png");
+	background-position: center center;
+	background-size: cover;
 }
