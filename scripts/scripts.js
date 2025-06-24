@@ -28,7 +28,7 @@ function setupFootstepSound() {
   });
 }
 
-// Sparkle Trail Cursor
+
 document.addEventListener('mousemove', (e) => {
   const sparkle = document.createElement('div');
   sparkle.className = 'unicornSparkle';
