@@ -1,80 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="northWallStyle.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Creepster&family=Frijole&family=Nosifer&display=swap"
-			rel="stylesheet"
-		/>
-		<script src="../scripts/roomOne.js" defer></script>
-		<script src="../scripts/scripts.js" defer></script>
-		<title>Escape Room - Ch.1 Wake Up</title>
-	</head>
-	<body>
-		<div class="northWall">
-			<div id="centerPopupMessage">
-				<p class="closeButton">[x]</p>
-				<h1 class="noteContent" id="noteTitle">MWUAHAHA</h1>
-				<p class="noteContent" id="lineOne">Welcome to my world now!</p>
-				<p class="noteContent" id="lineTwo">
-					Did you think it was going to be that east?
-				</p>
-				<p class="noteContent" id="lineThree">
-					Let's see if you can escape this?!
-				</p>
-				<div class="unicornCrossBones"></div>
-			</div>
-			<div class="calenderOnWall needsBorder" id="calender">
-				<div class="popup">
-					<img src="../assets/calendar-cover.png" alt="Calender" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/roomOneGlobals.css" />
+    <link rel="stylesheet" href="northWallStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&family=Frijole&family=Nosifer&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../scripts/roomOne.js" defer></script>
+    <script src="../scripts/scripts.js" defer></script>
+    <title>Escape Room - Ch.1 Wake Up</title>
+  </head>
+  <body>
+    <div class="northWall">
+      <div id="centerPopupMessage">
+        <p class="closeButton">[x]</p>
+        <h1 class="noteContent" id="noteTitle">MWUAHAHA</h1>
+        <p class="noteContent" id="lineOne">Welcome to my world now!</p>
+        <p class="noteContent" id="lineTwo">
+          Did you think it was going to be that east?
+        </p>
+        <p class="noteContent" id="lineThree">
+          Let's see if you can escape this?!
+        </p>
+        <div class="unicornCrossBones"></div>
+      </div>
+      <div class="calenderOnWall needsBorder" id="calender">
+        <div class="popup">
+          <img src="../assets/calendar-cover.png" alt="Calender" />
 
-					<span class="calenderText" id="myCalenderPopup"
-						><img
-							class="calenderClue"
-							src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Fcalendar-icon-transparent%2Fcalendar-icon-transparent-8.jpg&f=1&nofb=1&ipt=fe0ad2afd5b9c12da20beb955dfbd52f214c71292ea229b45f6dff42622d24df"
-							alt="calenderWithColor"
-					/></span>
-				</div>
-			</div>
-			<div class="windowOnWall needsBorder" id="theWindow">
-				<div class="theWindowBars needsBorder" id="barSection">
-					<div class="windowBar needsBorder" id="firstBar"></div>
-					<div class="windowBar needsBorder" id="secondBar"></div>
-					<div class="windowBar needsBorder" id="thirdBar"></div>
-					<div class="windowBar needsBorder" id="fourthBar"></div>
-					<div class="windowBar needsBorder" id="fifthBar"></div>
-					<div class="windowBar needsBorder" id="sixthBar"></div>
-				</div>
-				<div class="windowSill needsBorder" id="theWindowSill"></div>
-			</div>
-		</div>
-		<div class="navigationBar" id="navSection">
-			<div class="navigationArrow" id="arrowMoveLeft">
-				<a href="./westWall.html" class="arrowLookLeft">
-					<img
-						src="../assets/left-arrow.png"
-						alt="Left Stone arrow"
-						class="stoneArrows"
-						id="leftArrowPicture"
-					/>
-				</a>
-			</div>
-			<div class="navigationArrow" id="arrowMoveRight">
-				<div class="navigationArrow" id="arrowLookRight">
-					<a href="./eastWall.html" class="arrowLookRight"
-						><img
-							src="../assets/right-arrow.png"
-							alt="Right Stone arrow"
-							class="stoneArrows"
-							id="rightArrowPicture"
-					/></a>
-				</div>
-			</div>
-		</div>
-		<div class="floorOfRoom needsBorder" id="theFloor"></div>
-	</body>
+          <span class="calenderText" id="myCalenderPopup"
+            ><img
+              class="calenderClue"
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Fcalendar-icon-transparent%2Fcalendar-icon-transparent-8.jpg&f=1&nofb=1&ipt=fe0ad2afd5b9c12da20beb955dfbd52f214c71292ea229b45f6dff42622d24df"
+              alt="calenderWithColor"
+          /></span>
+        </div>
+      </div>
+      <div class="windowOnWall needsBorder" id="theWindow">
+        <div class="theWindowBars needsBorder" id="barSection">
+          <div class="windowBar needsBorder" id="firstBar"></div>
+          <div class="windowBar needsBorder" id="secondBar"></div>
+          <div class="windowBar needsBorder" id="thirdBar"></div>
+          <div class="windowBar needsBorder" id="fourthBar"></div>
+          <div class="windowBar needsBorder" id="fifthBar"></div>
+          <div class="windowBar needsBorder" id="sixthBar"></div>
+        </div>
+        <div class="windowSill needsBorder" id="theWindowSill"></div>
+      </div>
+    </div>
+    <div class="navigationBar" id="navSection">
+      <div class="navigationArrow" id="arrowMoveLeft">
+        <a href="./westWall.html" class="arrowLookLeft">
+          <img
+            src="../assets/left-arrow.png"
+            alt="Left Stone arrow"
+            class="stoneArrows"
+            id="leftArrowPicture"
+          />
+        </a>
+      </div>
+      <div class="navigationArrow" id="arrowMoveRight">
+        <div class="navigationArrow" id="arrowLookRight">
+          <a href="./eastWall.html" class="arrowLookRight"
+            ><img
+              src="../assets/right-arrow.png"
+              alt="Right Stone arrow"
+              class="stoneArrows"
+              id="rightArrowPicture"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <div class="floorOfRoom needsBorder" id="theFloor"></div>
+  </body>
 </html>
