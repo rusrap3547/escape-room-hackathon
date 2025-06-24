@@ -50,6 +50,8 @@ body {
   justify-content: space-between;
   border: none;
   z-index: 99;
+  position: absolute;
+  bottom: 10%;
 }
 
 .stoneArrows {

@@ -6,91 +6,89 @@
 	padding: 0;
 } */
 .wallContainer {
-	display: flex;
-	width: 100%;
-	height: 100%;
-	margin: 0 auto;
-	padding: 0;
-	flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  flex-direction: column;
 }
 
 /* ------ Attempt at making a bed ------ */
 #makeTheBed {
-	display: flex;
-	position: absolute;
-	display: flex;
-	flex-direction: column-reverse;
-	justify-content: center;
-	align-items: center;
-	border: solid 1px black;
-	margin-bottom: 100px;
+  display: flex;
+  position: absolute;
+  display: flex;
+  margin-bottom: 100px;
+  left: 20%;
+  bottom: 0;
+  z-index: 5;
+  width: 500px;
+  height: 250px;
 }
+.bedToppings {
+  display: flex;
+  align-items: flex-end;
+}
+
+.bedGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .bed-frame {
-	width: 300px;
-	height: 150px;
-	background-color: #3e2723; /* Dark brown wood */
-	border-radius: 10px;
-	position: relative;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 60px;
+  /* height: 200px; */
+  background-color: #3e2723; /* Dark brown wood */
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .mattress {
-	width: 280px;
-	height: 100px;
-	background-color: #ffffff;
-	position: relative;
-	border-radius: 8px;
+  width: 400px;
+  height: 80px;
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 8px;
+  align-self: center;
 }
 
 .pillow {
-	width: 80px;
-	height: 30px;
-	background-color: #e0e0e0;
-	position: relative;
-	border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  background-color: #e0e0e0;
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+#screwdriverClue {
+  height: 40px;
+  display: none;
 }
 
 .blanket {
-	width: 180px;
-	height: 60px;
-	background-color: #90caf9; /* Soft blue */
-	position: relative;
-	border-top-left-radius: 30px;
-	border-top-right-radius: 30px;
+  width: 320px;
+  height: 100px;
+  background-color: #90caf9; /* Soft blue */
+  position: relative;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  z-index: 5;
 }
 
 /* ------------  WALL SECTION ------------ */
 .westWallSection {
-	height: 100%;
-	width: 100%;
-	/* background-color: lightgray; */
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-}
-
-/* .navigationSection {
-  height: 130px;
-  width: 230px;
-  display: flex;
-  justify-content: space-between;
-  background-color: lightslategray;
-}
-#navigationBar {
-  display: flex;
-  height: 130px;
+  height: 100%;
   width: 100%;
-  flex-direction: row;
-}
-.navigationArrow {
-  height: 130px;
-  width: 230px;
+  /* background-color: lightgray; */
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-.stoneArrows {
-  height: 130px;
-  width: 230px;
-  display: flex;
-} */
