@@ -1,120 +1,134 @@
 body {
-	height: 100vh;
-	width: 100vw;
-	padding: 0;
-	margin: 0;
-	overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 .wallContainer {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #southWall {
-	/* background-color: lightgray; */
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
+  /* background-color: lightgray; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
+
 #cellDoorExit {
-	border: solid 1px black;
-	position: absolute;
-	height: 80%;
-	width: 40%;
-	margin-left: 30%;
-	background-color: aliceblue;
+  position: absolute;
+  margin-left: 30%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
+
+.theDoor {
+  height: 480px;
+  width: 240px;
+  overflow: hidden;
+  box-shadow: 2px 2px 4px black;
+}
+
+#exitDoor {
+  height: 500px;
+  width: 300px;
+  position: relative;
+  left: -28px;
+}
+
 .doorPadlock {
-	display: flex;
-	position: relative;
-	border: solid 1px black;
-	margin-top: 70%;
-	margin-left: 100%;
-	height: 100px;
-	width: 100px;
-	background-color: aliceblue;
+  display: flex;
+  z-index: 5;
+  /* right: -50%; */
+  border: solid 1px black;
+  /* height: 100px; */
+  width: 100px;
+  background-color: rgba(240, 248, 255, 0.459);
 }
 
 /* ------- Door Lock and Popup ------- */
 /* Small Padlock Icon */
 .padlock-icon {
-	font-size: 24px;
-	cursor: pointer;
-	height: 100%;
-	width: 100%;
-	user-select: none;
-	bottom: 20px;
-	right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  bottom: 20px;
+  right: 20px;
 }
 
 img {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 /* Popup Modal Styling */
 .padlock-popup {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.6);
-	display: none;
-	align-items: center;
-	justify-content: center;
-	z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
 }
 
 .padlock-box {
-	background: #1e1e1e;
-	color: white;
-	padding: 30px;
-	border-radius: 12px;
-	text-align: center;
-	box-shadow: 0 0 10px black;
-	position: relative;
+  background: #1e1e1e;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px black;
+  position: relative;
 }
 
 .padlock-box h3 {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .dials {
-	display: flex;
-	gap: 10px;
-	justify-content: center;
-	margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .dial {
-	font-size: 24px;
-	padding: 5px;
-	width: 60px;
-	text-align: center;
+  font-size: 24px;
+  padding: 5px;
+  width: 60px;
+  text-align: center;
 }
 
 #submitCombo {
-	padding: 10px 20px;
-	font-size: 16px;
-	background: green;
-	border: none;
-	color: white;
-	border-radius: 6px;
-	cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: green;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 #closePopup {
-	position: absolute;
-	top: 5px;
-	right: 10px;
-	background: none;
-	border: none;
-	font-size: 20px;
-	color: white;
-	cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
 }
