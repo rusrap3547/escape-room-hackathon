@@ -71,3 +71,7 @@ body {
   display: flex;
   justify-content: flex-end;
 }
+
+.hintLocation:hover {
+  cursor: url("../assets/search.png"), auto;
+}
