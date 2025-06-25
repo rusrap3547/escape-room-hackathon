@@ -79,10 +79,11 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('Unlocked!');
       lockpopup.style.display = 'none';
       padlockIcon.textContent = '🔓';
-      let isDoorUnlocked = true;
+      isDoorUnlocked = true;
       // Additional: trigger door animation or unlock behavior here
     } else {
       alert('Incorrect combination!');
     }
   });
 });
+
