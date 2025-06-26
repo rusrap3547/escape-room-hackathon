@@ -1,250 +1,250 @@
 #eScreenContainer {
-	height: 100vh;
-	width: 100vw;
-	margin: 0 auto;
-	padding: 0;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	/* background-color: lightgray; */
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* background-color: lightgray; */
 }
 
 .wallContainer {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .containerShelf {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	width: 600px;
-	position: absolute;
-	left: 40%;
-	top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 600px;
+  position: absolute;
+  left: 40%;
+  top: 20%;
 }
 
 #unicornPuddle {
-	background-image: url("../assets/puddles.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	height: 250px;
-	width: 230px;
-	position: absolute;
-	bottom: -60%;
+  background-image: url("../assets/puddles.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 230px;
+  position: absolute;
+  bottom: -60%;
 }
 .drip,
 .bloodSplatter {
-	opacity: 0;
-	pointer-events: none; /* Just in case */
-	position: absolute;
-	transition: opacity 1.5s ease;
+  opacity: 0;
+  pointer-events: none; /* Just in case */
+  position: absolute;
+  transition: opacity 1.5s ease;
 }
 
 .unicornHead {
-	height: 180px;
-	width: 170px;
-	bottom: 15%;
-	z-index: 5;
-	position: absolute;
-	background-image: url("../assets/unicorn-dead.png");
-	background-size: cover;
+  height: 180px;
+  width: 170px;
+  bottom: 15%;
+  z-index: 5;
+  position: absolute;
+  background-image: url("../assets/unicorn-dead.png");
+  background-size: cover;
 }
 
 @keyframes splat {
-	0% {
-		transform: translate(0, 0) rotate(0deg) scale(1, 1);
-	}
-	100% {
-		transform: translate(50px, 460px) rotate(720deg) scale(1.4, 0.4);
-	}
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1, 1);
+  }
+  100% {
+    transform: translate(50%, 230%) rotate(720deg) scale(1.4, 0.4);
+  }
 }
 
 .books {
-	display: flex;
-	align-self: flex-end;
-	align-items: flex-end;
-	gap: 1px;
+  display: flex;
+  align-self: flex-end;
+  align-items: flex-end;
+  gap: 1px;
 }
 
 .book {
-	width: 38px;
-	border-radius: 10%;
-	border: 1px solid black;
-	box-shadow: inset 0 -7px 7px rgba(0, 0, 0, 0.5);
+  width: 38px;
+  border-radius: 10%;
+  border: 1px solid black;
+  box-shadow: inset 0 -7px 7px rgba(0, 0, 0, 0.5);
 }
 
 #bookOne {
-	height: 100px;
-	background-color: darkorchid;
+  height: 100px;
+  background-color: darkorchid;
 }
 
 #bookTwo {
-	height: 70px;
-	width: 35px;
-	background-color: darkolivegreen;
+  height: 70px;
+  width: 35px;
+  background-color: darkolivegreen;
 }
 
 #bookThree {
-	height: 130px;
-	background-color: darkslateblue;
+  height: 130px;
+  background-color: darkslateblue;
 }
 #bookFour {
-	height: 90px;
-	background-color: darkgoldenrod;
+  height: 90px;
+  background-color: darkgoldenrod;
 }
 
 .shelfOnWall {
-	height: 35px;
-	width: 100%;
-	border: solid 1px black;
-	background-color: black;
-	box-shadow: 2px 4px 8px black;
+  height: 35px;
+  width: 100%;
+  border: solid 1px black;
+  background-color: black;
+  box-shadow: 2px 4px 8px black;
 }
 
 .chainContainer {
-	position: absolute;
-	border: solid 1px black;
-	width: 10%;
-	display: flex;
-	justify-content: space-around;
-	top: 30%;
-	left: 15%;
+  position: absolute;
+  border: solid 1px black;
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+  top: 30%;
+  left: 15%;
 }
 
 .chainContainer div {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .chainLink {
-	height: 70px;
-	width: 30px;
-	border: solid 1px black;
-	border-radius: 50%;
-	background-image: radial-gradient(
-		circle at top left,
-		whitesmoke 25%,
-		rgb(138, 138, 138),
-		rgb(110, 110, 110) 55%
-	);
-	mask-image: radial-gradient(ellipse at center, transparent 35%, black 26%);
-	mask-composite: exclude;
-	mask-repeat: no-repeat;
+  height: 70px;
+  width: 30px;
+  border: solid 1px black;
+  border-radius: 50%;
+  background-image: radial-gradient(
+    circle at top left,
+    whitesmoke 25%,
+    rgb(138, 138, 138),
+    rgb(110, 110, 110) 55%
+  );
+  mask-image: radial-gradient(ellipse at center, transparent 35%, black 26%);
+  mask-composite: exclude;
+  mask-repeat: no-repeat;
 }
 
 .handCuff {
-	height: 50px;
-	width: 20px;
-	border: 1px solid black;
-	border-radius: 20%;
-	background-image: radial-gradient(
-		circle at top left,
-		whitesmoke 25%,
-		rgb(138, 138, 138),
-		rgb(110, 110, 110) 55%
-	);
+  height: 50px;
+  width: 20px;
+  border: 1px solid black;
+  border-radius: 20%;
+  background-image: radial-gradient(
+    circle at top left,
+    whitesmoke 25%,
+    rgb(138, 138, 138),
+    rgb(110, 110, 110) 55%
+  );
 }
 
 /* TODO Make visible/fade in when unicorn hits the floor */
 .bloodSplatter {
-	/* opacity: 0; */
-	bottom: 18%;
-	left: 45%;
-	position: absolute;
+  /* opacity: 0; */
+  bottom: 18%;
+  left: 45%;
+  position: absolute;
 }
 
 .bloodSplatter h1 {
-	position: relative;
-	font-family: "Nosifer";
-	font-size: 100px;
-	letter-spacing: 8px;
-	background: linear-gradient(
-		to right,
-		#d90c41 5%,
-		magenta,
-		rgb(174, 0, 255),
-		cyan 90%
-	);
-	background-clip: text;
-	color: transparent;
+  position: relative;
+  font-family: "Nosifer";
+  font-size: 100px;
+  letter-spacing: 8px;
+  background: linear-gradient(
+    to right,
+    #d90c41 5%,
+    magenta,
+    rgb(174, 0, 255),
+    cyan 90%
+  );
+  background-clip: text;
+  color: transparent;
 
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-	animation: drip 3s infinite alternate;
-	transition: all 0.25s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: drip 3s infinite alternate;
+  transition: all 0.25s ease;
 }
 
 .dripContainer {
-	position: absolute;
-	top: 55%; /* start just below the blood text */
-	left: 40px;
-	width: 100%;
-	z-index: -2;
+  position: absolute;
+  top: 55%; /* start just below the blood text */
+  left: 40px;
+  width: 100%;
+  z-index: -2;
 }
 
 .drip {
-	position: absolute;
-	top: 0;
-	width: 8px;
-	height: 20px;
-	background: linear-gradient(
-		to top,
-		#d90c41 1%,
-		magenta,
-		rgb(174, 0, 255),
-		cyan 90%
-	);
-	border-radius: 50% 50% 40% 40%;
-	animation: dripFall 2.5s ease-in infinite;
-	opacity: 0.8;
+  position: absolute;
+  top: 0;
+  width: 8px;
+  height: 20px;
+  background: linear-gradient(
+    to top,
+    #d90c41 1%,
+    magenta,
+    rgb(174, 0, 255),
+    cyan 90%
+  );
+  border-radius: 50% 50% 40% 40%;
+  animation: dripFall 2.5s ease-in infinite;
+  opacity: 0.8;
 }
 
 .drip1 {
-	left: -30px;
-	animation-delay: 0s;
+  left: -30px;
+  animation-delay: 0s;
 }
 
 .drip2 {
-	left: 40px;
-	animation-delay: 0.8s;
+  left: 40px;
+  animation-delay: 0.8s;
 }
 
 .drip3 {
-	left: 70px;
-	animation-delay: 1.5s;
+  left: 70px;
+  animation-delay: 1.5s;
 }
 
 .drip4 {
-	left: 130px;
+  left: 130px;
 }
 
 @keyframes dripFall {
-	0% {
-		height: 10px;
-		transform: translateY(0) scaleX(1);
-		opacity: 1;
-	}
-	50% {
-		height: 40px;
-		transform: translateY(20px) scaleX(0.8);
-		opacity: 0.9;
-	}
-	80% {
-		height: 50px;
-		transform: translateY(60px) scaleX(0.5);
-		opacity: 0.6;
-	}
-	100% {
-		height: 0px;
-		transform: translateY(80px) scaleX(0.2);
-		opacity: 0;
-	}
+  0% {
+    height: 10px;
+    transform: translateY(0) scaleX(1);
+    opacity: 1;
+  }
+  50% {
+    height: 40px;
+    transform: translateY(20px) scaleX(0.8);
+    opacity: 0.9;
+  }
+  80% {
+    height: 50px;
+    transform: translateY(60px) scaleX(0.5);
+    opacity: 0.6;
+  }
+  100% {
+    height: 0px;
+    transform: translateY(80px) scaleX(0.2);
+    opacity: 0;
+  }
 }

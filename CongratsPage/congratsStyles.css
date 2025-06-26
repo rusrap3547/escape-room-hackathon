@@ -1,0 +1,19 @@
+body {
+  width: 100vw;
+  max-width: 1920px;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.messageContainer {
+  background-image: radial-gradient(
+    circle at top right,
+    pink,
+    magenta,
+    hotpink
+  );
+  border-radius: 20px;
+  padding: 2%;
+}
