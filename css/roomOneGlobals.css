@@ -1,5 +1,6 @@
 body {
   width: 100vw;
+  max-width: 1920px;
   height: 100vh;
   overflow: hidden;
   margin: 0 auto;
@@ -22,7 +23,7 @@ body {
 
 .floorOfRoom {
   background-color: darkgray;
-  height: 150px;
+  height: 15%;
   width: 100%;
   border: 1px solid black;
   display: flex;
