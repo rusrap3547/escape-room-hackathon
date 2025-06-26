@@ -30,7 +30,7 @@ function calenderPopup(event) {
   }
 }
 
-
+// Door Lock mechanism
 document.addEventListener('DOMContentLoaded', () => {
   const lockpopup = document.getElementById('padlockPopup');
   const padlockIcon = document.getElementById('padlockIcon');
@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Dead uniorn Falling
 document.addEventListener('DOMContentLoaded', () => {
   const deadUnicorn = document.querySelector('.unicornHead#deadUnicorn');
   const drip = document.querySelector('.drip');
@@ -111,4 +112,22 @@ document.addEventListener('DOMContentLoaded', () => {
       drip.style.animation = 'dripFall 2s infinite linear';
     }, 2500);
   });
+});
+
+document.getElementById('pillow').addEventListener('click', function () {
+  const pillow = this;
+  const screwdriver = document.getElementById('screwdriverClue');
+
+  // Prevent multiple triggers
+  if (pillow.classList.contains('movePillow')) return;
+
+  // Add animation class
+  pillow.classList.add('movePillow');
+
+  // After animation finishes
+  setTimeout(() => {
+    screwdriver.style.display = 'block';
+    localStorage.setItem('hasScrewdriver', 'true');
+    alert('You found a screwdriver, it might come in handy later.');
+  }, 1000); // matches animation duration
 });
