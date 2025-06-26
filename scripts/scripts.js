@@ -53,3 +53,4 @@ document.addEventListener('mousemove', (e) => {
     sparkle.remove();
   }, 700); // sparkle duration
 });
+
