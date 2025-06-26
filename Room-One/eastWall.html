@@ -5,10 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="eastWallStyle.css" />
 		<link rel="stylesheet" href="../css/roomOneGlobals.css" />
-		    <link
-      href="https://fonts.googleapis.com/css2?family=Creepster&family=Frijole&family=Nosifer&display=swap"
-      rel="stylesheet"
-    />
+		<script src="/scripts/roomOne.js" defer></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Creepster&family=Frijole&family=Nosifer&display=swap"
+			rel="stylesheet"
+		/>
 		<title>East Wall</title>
 	</head>
 	<body>
@@ -25,9 +26,7 @@
 		<div class="eRoomContainer" id="eScreenContainer">
 			<div class="wallContainer" id="wholeWallBox">
 				<div class="containerShelf">
-
-					<div class="unicornHead hintLocation" id="deadUnicorn">
-					</div>
+					<div class="unicornHead hintLocation" id="deadUnicorn"></div>
 					<div class="books">
 						<div class="book" id="bookOne"></div>
 						<div class="book" id="bookTwo"></div>
@@ -39,7 +38,7 @@
 				<div class="bloodSplatter">
 					<h1 class="hintLocation bloodSplat">24</h1>
 					<div id="unicornPuddle"></div>
-					
+
 					<div class="dripContainer">
 						<div class="drip drip1"></div>
 						<div class="drip drip2"></div>
@@ -47,48 +46,47 @@
 						<div class="drip drip4"></div>
 					</div>
 				</div>
-        <div class="chainContainer" id="wallChains">
-          <div class="leftChain" id="leftChainBox">
-            <div class="chainLink" id="firstLink"></div>
-            <div class="chainLink" id="secondLink"></div>
-            <div class="chainLink" id="thirdLink"></div>
-            <div class="handCuff" id="leftCuff"></div>
-          </div>
-          <div class="rightChain" id="rightChainBox">
-            	<div class="chainLink" id="fourthLink"></div>
-            	<div class="chainLink" id="fifthLink"></div>
-            	<div class="chainLink" id="sixthLink"></div>
-            	<div class="handCuff" id="rightCuff"></div>
+				<div class="chainContainer" id="wallChains">
+					<div class="leftChain" id="leftChainBox">
+						<div class="chainLink" id="firstLink"></div>
+						<div class="chainLink" id="secondLink"></div>
+						<div class="chainLink" id="thirdLink"></div>
+						<div class="handCuff" id="leftCuff"></div>
+					</div>
+					<div class="rightChain" id="rightChainBox">
+						<div class="chainLink" id="fourthLink"></div>
+						<div class="chainLink" id="fifthLink"></div>
+						<div class="chainLink" id="sixthLink"></div>
+						<div class="handCuff" id="rightCuff"></div>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<div class="navigationBar" id="navSection">
+			<div class="navigationArrow" id="arrowMoveLeft">
+				<a href="./northWall.html" class="arrowLookLeft"
+					><img
+						src="../assets/left-arrow.png"
+						alt="Left Stone arrow"
+						class="stoneArrows"
+						id="leftArrowPicture"
+				/></a>
 			</div>
-			<div class="navigationBar" id="navSection">
-				<div class="navigationArrow" id="arrowMoveLeft">
-					<a href="./northWall.html" class="arrowLookLeft"
+			<div class="navigationArrow" id="arrowMoveRight">
+				<div class="navigationArrow" id="arrowLookRight">
+					<a href="./southWall.html" class="arrowLookRight"
 						><img
-							src="../assets/left-arrow.png"
-							alt="Left Stone arrow"
+							src="../assets/right-arrow.png"
+							alt="Right Stone arrow"
 							class="stoneArrows"
-							id="leftArrowPicture"
+							id="rightArrowPicture"
 					/></a>
 				</div>
-				<div class="navigationArrow" id="arrowMoveRight">
-					<div class="navigationArrow" id="arrowLookRight">
-						<a href="./southWall.html" class="arrowLookRight"
-							><img
-								src="../assets/right-arrow.png"
-								alt="Right Stone arrow"
-								class="stoneArrows"
-								id="rightArrowPicture"
-						/></a>
-					</div>
-				</div>
 			</div>
-			<div class="floorOfRoom" id="eastFloor"></div>
 		</div>
+		<div class="floorOfRoom" id="eastFloor"></div>
+
 		<iframe
 			src="/audio.html"
 			style="display: none"
@@ -96,5 +94,6 @@
 			allow="autoplay"
 		>
 		</iframe>
+		<div class="popup dial dials" id="centerPopupMessage"></div>
 	</body>
 </html>

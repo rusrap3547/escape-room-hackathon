@@ -87,3 +87,28 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const deadUnicorn = document.querySelector('.unicornHead#deadUnicorn');
+  const drip = document.querySelector('.drip');
+  const bloodSplatter = document.querySelector('.bloodSplatter');
+
+  if (!deadUnicorn || !drip || !bloodSplatter) {
+    console.warn('One or more elements missing: .unicornHead#deadUnicorn, .drip, .bloodSplatter');
+    return;
+  }
+
+  drip.style.opacity = 0;
+  bloodSplatter.style.opacity = 0;
+  deadUnicorn.addEventListener('click', () => {
+    console.log('🦄 Unicorn head clicked!');
+
+    deadUnicorn.style.animation = 'splat 0.6s forwards';
+    setTimeout(() => {
+      drip.style.opacity = 1;
+      bloodSplatter.style.opacity = 1;
+    }, 500);
+    setTimeout(() => {
+      drip.style.animation = 'dripFall 2s infinite linear';
+    }, 2500);
+  });
+});
