@@ -5,6 +5,15 @@ body {
   overflow: hidden;
   margin: 0 auto;
   padding: 0;
+  background: linear-gradient(to bottom right, #5a0000, #ffc0cb);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .messageContainer {
@@ -14,6 +23,7 @@ body {
     magenta,
     hotpink
   );
+
   border-radius: 20px;
   padding: 2%;
 }
