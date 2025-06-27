@@ -5,25 +5,113 @@ body {
   overflow: hidden;
   margin: 0 auto;
   padding: 0;
-  background: linear-gradient(to bottom right, #5a0000, #ffc0cb);
-  background-size: cover;
+  background: url("../assets/sparkling.png") repeat,
+    linear-gradient(#5a0000, #ffc0cb);
+  background-size: 50px;
   overflow: hidden;
 }
 
 .pageContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .messageContainer {
-  background-image: radial-gradient(
-    circle at top right,
-    pink,
-    magenta,
-    hotpink
-  );
-
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../assets/note-background.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 35%;
+  font-family: "Frijole", system-ui;
   border-radius: 20px;
-  padding: 2%;
+  padding: 3%;
+}
+
+.unicornCrossBones {
+  justify-self: center;
+  width: 170px;
+  height: 110px;
+  bottom: 20px;
+  clip-path: margin-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/unicornPirate.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.unicornsLeft,
+.unicornsRight,
+.unicornsTopLeft,
+.unicornsTopRight,
+.unicornsSideLeft,
+.unicornsSideRight {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  height: 20%;
+  z-index: 5;
+}
+
+.unicornsLeft {
+  left: 0;
+  bottom: 5%;
+}
+
+.unicornsRight {
+  right: 0;
+  bottom: 5%;
+}
+
+.unicornsTopLeft,
+.unicornsTopRight {
+  top: 5%;
+  rotate: 180deg;
+}
+
+.unicornsTopLeft {
+  left: 0;
+}
+
+.unicornsTopRight {
+  right: 0;
+}
+
+.unicornsSideLeft {
+  rotate: 90deg;
+  width: 25%;
+  left: -7%;
+  top: 40%;
+}
+.unicornsSideRight {
+  rotate: -90deg;
+  width: 25%;
+  right: -7%;
+  top: 40%;
+}
+
+.unicorn {
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/unicornHugs.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 10%;
+  animation: creep 90s ease-in infinite;
+}
+
+@keyframes creep {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(10);
+  }
 }

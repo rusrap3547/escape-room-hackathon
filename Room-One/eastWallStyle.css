@@ -101,6 +101,19 @@ img {
   background-color: darkgoldenrod;
 }
 
+.unicornSkeleton {
+  background-image: url(../assets/skeletalUnicorn.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: margin-box;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 30%;
+  bottom: 20px;
+}
+
 .shelfOnWall {
   height: 35px;
   width: 100%;
@@ -111,7 +124,8 @@ img {
 
 .chainContainer {
   position: absolute;
-  border: solid 1px black;
+  /* border: solid 1px black; */
+  border-top: 10px solid lightgrey;
   width: 10%;
   display: flex;
   justify-content: space-around;
