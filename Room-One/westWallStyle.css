@@ -1,119 +1,155 @@
 .wallContainer {
-	display: flex;
-	width: 100%;
-	height: 100%;
-	margin: 0 auto;
-	padding: 0;
-	flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  flex-direction: column;
 }
 
 /* ------ Attempt at making a bed ------ */
 #makeTheBed {
-	display: flex;
-	position: absolute;
-	display: flex;
-	margin-bottom: 100px;
-	left: 20%;
-	bottom: 0;
-	z-index: 5;
-	width: 500px;
-	height: 250px;
+  display: flex;
+  position: absolute;
+  display: flex;
+  margin-bottom: 100px;
+  left: 20%;
+  bottom: 0;
+  z-index: 5;
+  width: 500px;
+  height: 250px;
 }
 .bedToppings {
-	display: flex;
-	align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 
 .bedGroup {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .bed-frame {
-	width: 60px;
-	/* height: 200px; */
-	background-color: #3e2723; /* Dark brown wood */
-	border-radius: 10px;
-	position: relative;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  width: 60px;
+  /* height: 200px; */
+  background-color: #3e2723; /* Dark brown wood */
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .mattress {
-	width: 400px;
-	height: 80px;
-	background-color: #ffe8df;
-	position: relative;
-	border-radius: 8px;
-	align-self: center;
+  width: 400px;
+  height: 80px;
+  background-color: #ffe8df;
+  position: relative;
+  border-radius: 8px;
+  align-self: center;
 }
 
 /* TODO make animation run on click */
 .pillow {
-	width: 80px;
-	height: 40px;
-	background-color: #bcd1d1;
-	position: relative;
-	border-radius: 5px;
-	display: flex;
-	justify-content: center;
-	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-	z-index: 6;
-	animation: foundIt 1s ease-in linear;
+  width: 80px;
+  height: 40px;
+  background-color: #bcd1d1;
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 6;
+  animation: foundIt 1s ease-in linear;
 }
 
 @keyframes liftPillow {
-	0% {
-		transform: translate(0, 0) rotate(0deg);
-	}
-	30% {
-		transform: translate(30px, -20px) rotate(-5deg);
-	}
-	60% {
-		transform: translate(80px, -5px) rotate(3deg);
-	}
-	100% {
-		transform: translate(120px, 0) rotate(0deg);
-	}
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  30% {
+    transform: translate(30px, -20px) rotate(-5deg);
+  }
+  60% {
+    transform: translate(80px, -5px) rotate(3deg);
+  }
+  100% {
+    transform: translate(120px, 0) rotate(0deg);
+  }
 }
 
 #pillow.movePillow {
-	animation: liftPillow 1s ease forwards;
+  animation: liftPillow 1s ease forwards;
 }
 
 .screwdriverLocation {
-	z-index: -2;
-	position: absolute;
-	left: 65px;
-	top: 70px;
+  z-index: -2;
+  position: absolute;
+  left: 65px;
+  top: 70px;
 }
 
 #screwdriverClue {
-	height: 40px;
-	rotate: 30deg;
-	/* display: none; */
+  height: 40px;
+  rotate: 30deg;
+  /* display: none; */
 }
 
 .blanket {
-	width: 320px;
-	height: 100px;
-	background-color: #90caf9; /* Soft blue */
-	position: relative;
-	border-top-left-radius: 30px;
-	border-top-right-radius: 30px;
-	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.425);
-	position: absolute;
-	right: 10%;
-	top: 25%;
-	z-index: 5;
+  width: 320px;
+  height: 100px;
+  background-color: #90caf9; /* Soft blue */
+  position: relative;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.425);
+  position: absolute;
+  right: 10%;
+  top: 25%;
+  z-index: 5;
 }
 
 /* ------------  WALL SECTION ------------ */
 .westWallSection {
-	height: 100%;
-	width: 100%;
-	/* background-color: lightgray; */
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  /* background-color: lightgray; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.poster {
+  position: absolute;
+  width: 150px;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 10%;
+}
+
+#security {
+  background-image: url("../assets/posterUnicornSec.webp");
+  left: 10%;
+}
+
+#osha {
+  background-image: url("../assets/posterUnicornOSHA.png");
+  left: 40%;
+  width: 200px;
+}
+
+#muerto {
+  background-image: url("../assets/posterUnicornMuerto.jpg");
+  right: 15%;
+  width: 200px;
+}
+
+.unicornSkeleton {
+  background-image: url("../assets/skeletalUnicorn.png");
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  bottom: 15%;
+  right: 30%;
+  position: absolute;
 }
