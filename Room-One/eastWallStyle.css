@@ -111,7 +111,44 @@ img {
   height: 100px;
   position: absolute;
   right: 30%;
-  bottom: 20px;
+  bottom: 25px;
+}
+
+.candle {
+  position: absolute;
+  bottom: 35px;
+  left: 40%;
+  width: 30px;
+  height: 80px;
+  background: #ff72ff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px black, inset 0 0 10px #ffec9f;
+}
+.flame {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  width: 15px;
+  height: 30px;
+  background: radial-gradient(
+    ellipse at center,
+    #ffb41f 0%,
+    #ff3e0d 70%,
+    rgba(255, 51, 0, 0) 100%
+  );
+  border-radius: 50% 50% 50% 50%;
+  transform: translateX(-50%);
+  animation: flicker 0.3s infinite alternate;
+}
+@keyframes flicker {
+  from {
+    transform: translateX(-50%) scaleY(1);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-50%) scaleY(1.2);
+    opacity: 0.8;
+  }
 }
 
 .shelfOnWall {
