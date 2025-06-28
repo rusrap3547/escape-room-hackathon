@@ -81,14 +81,14 @@ body {
   box-shadow: 3px 3px 6px black;
 }
 
-.floorOfRoom {
+/* .floorOfRoom {
   background-color: darkgray;
   height: 150px;
   width: 100%;
   border: 1px solid black;
   display: flex;
   justify-content: flex-end;
-}
+} */
 
 .needsBorder {
   border: solid 1px black;
