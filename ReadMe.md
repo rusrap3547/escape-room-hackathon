@@ -68,3 +68,16 @@ Welcome to Twinkle Trap, the escape room that lures you in with sparkly unicorn 
 10. The final page is the congrats page with a final message from the evil overlord
 
 <!-- TODO screenshot -->
+
+-- Challenges and Learning --
+
+- Learning to work as a team through gitHub
+- Creating interactive events through javaScript
+<!-- TODO add more Russ challenges/learning curves -->
+
+-- Credits and Resources --
+
+- Calendar was made on canva
+- Unicorns were ai generated and edited on canva
+- Icons were from flaticon and vecteezy
+- Sound effects are from pixabay
