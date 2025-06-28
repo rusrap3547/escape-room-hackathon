@@ -112,7 +112,7 @@ function tryToOpenDoor() {
   } else {
     alert('You open the door and escape!');
     console.log('SUCCESS: Door opened.');
-    // window.location.href = 'nextRoom.html'; // optional redirect
+    window.location.href = '../CongratsPage/congratsPage.html'
   }
 }
 
@@ -124,3 +124,18 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('hiddenSwitch')?.addEventListener('click', togglePowerSwitch);
   document.getElementById('exitDoor')?.addEventListener('click', tryToOpenDoor);
 });
+
+
+  const footstepAudio = new Audio('../assets/footStepsSound.mp3');
+  document.addEventListener('DOMContentLoaded', () => {
+    const arrows = document.querySelectorAll('img.stoneArrows');
+
+    arrows.forEach(arrow => {
+      arrow.addEventListener('click', () => {
+        footstepAudio.currentTime = 0;
+        footstepAudio.play().catch(e => {
+          console.warn('Audio play failed:', e);
+        });
+      });
+    });
+  });
