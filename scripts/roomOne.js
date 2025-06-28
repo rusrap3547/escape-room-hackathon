@@ -131,3 +131,34 @@ document.getElementById('pillow').addEventListener('click', function () {
     alert('You found a screwdriver, it might come in handy later.');
   }, 1000); // matches animation duration
 });
+
+const scarySound = document.getElementById('scarySound');
+const soundTriggers = document.querySelectorAll('.soundTrigger');
+
+// Loop through them and add the event listener
+soundTriggers.forEach(trigger => {
+  trigger.addEventListener('click', () => {
+    scarySound.currentTime = 0;
+    scarySound.play();
+
+    // Stop after 2 seconds
+    setTimeout(() => {
+      scarySound.pause();
+      scarySound.currentTime = 0;
+    }, 2000);
+  });
+});
+
+  const footstepAudio = new Audio('../assets/footStepsSounds.mp3');
+  document.addEventListener('DOMContentLoaded', () => {
+    const arrows = document.querySelectorAll('img.stoneArrows');
+
+    arrows.forEach(arrow => {
+      arrow.addEventListener('click', () => {
+        footstepAudio.currentTime = 0;
+        footstepAudio.play().catch(e => {
+          console.warn('Audio play failed:', e);
+        });
+      });
+    });
+  });
