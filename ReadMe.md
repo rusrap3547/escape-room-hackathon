@@ -1,0 +1,2 @@
+#Twinkle Trap Escape Room : Hackathon Edition
+Welcome to Twinkle Trap, the escape room that lures you in with sparkly unicorn cuteness — and then locks you in a nightmare. What begins as a pastel-hued game quickly turns dark when you wake up trapped in a creepy room full of unsettling surprises. Follow the twisted trail of hints, clues, and unsettling unicorn magic to free yourself... before the overlord of twisted unicorns drags you deeper into their glitter-coated nightmare. Will you escape the trap, or become just another glitter-stained victim?
