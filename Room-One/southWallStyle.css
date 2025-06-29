@@ -5,6 +5,7 @@ body {
   margin: 0;
   overflow: hidden;
 }
+
 .wallContainer {
   height: 100%;
   width: 100%;
@@ -92,6 +93,9 @@ img {
   text-align: center;
   box-shadow: 0 0 10px black;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .padlock-box h3 {
@@ -102,7 +106,7 @@ img {
   display: flex;
   gap: 10px;
   justify-content: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .dial {

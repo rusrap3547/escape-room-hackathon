@@ -1,87 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="southWallStyle.css" />
-		<link rel="stylesheet" href="../css/roomOneGlobals.css" />
-		<script src="/scripts/roomOne.js" defer></script>
-		<title>Ch.1 South Room</title>
-	</head>
-	<body>
-		<div class="wallContainer roomBox" id="wholeWindow">
-			<!-- Wanna see if you can make a camera or something? -->
-			<div class="southernWallContainer southWallSection" id="southWall">
-				<!-- Giant steel door with a padlock, need code using Calender and Book -->
-				<div class="doorSection" id="cellDoorExit">
-					<div class="theDoor">
-						<a
-							href="../Hall-Way/hallWay.html"
-							class="exitDoor"
-							id="doorToHallway"
-							><img src="../assets/exitDoor.png" alt="Jail Door" id="exitDoor"
-						/></a>
-					</div>
-					<div class="doorPadlock passwordSolution" id="firstPuzzle">
-						<div class="padlock-icon" id="padlockIcon">
-							<img src="../assets/padlock.png" alt="Lock Image" />
-						</div>
-						<div class="padlock-popup" id="padlockPopup">
-							<div class="padlock-box">
-								<h3>Enter Combination</h3>
-								<div class="dials">
-									<select class="dial" id="dial1">
-										<option value="">-</option>
-									</select>
-									<select class="dial" id="dial2">
-										<option value="">-</option>
-									</select>
-									<select class="dial" id="dial3">
-										<option value="">-</option>
-									</select>
-									<select class="dial" id="dial4">
-										<option value="">-</option>
-									</select>
-								</div>
-								<button id="submitCombo">Unlock</button>
-								<button id="closePopup">✖</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- This section is for moving the rooms -->
-				<div class="navigationBar" id="navigationSection">
-					<div class="navigationArrow" id="arrowMoveLeft">
-						<a href="../Room-One/eastWall.html" class="mapChangeArrow">
-							<img
-								src="../assets/left-arrow.png"
-								alt="Left Stone arrow"
-								class="stoneArrows"
-								id="leftArrowPicture"
-							/>
-						</a>
-					</div>
-					<div class="navigationArrow" id="arrowMoveRight">
-						<a href="./westWall.html" class="mapChangeArrow">
-							<img
-								src="/assets/right-arrow.png"
-								alt="Right Stone arrow"
-								class="stoneArrows"
-								id="rightArrowPicture"
-							/>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="floorOfRoom popup dial dials pillow" id="southFloor"></div>
-			<div class="popup"></div>
-		</div>
-		<iframe
-			src="/audio.html"
-			style="display: none"
-			id="bgAudioFrame"
-			allow="autoplay"
-		>
-		</iframe>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="southWallStyle.css" />
+    <link rel="stylesheet" href="../css/roomOneGlobals.css" />
+    <script src="/scripts/roomOne.js" defer></script>
+    <title>Ch.1 South Room</title>
+  </head>
+  <body>
+    <div class="wallContainer roomBox" id="wholeWindow">
+      <!-- Wanna see if you can make a camera or something? -->
+      <div class="southernWallContainer southWallSection" id="southWall">
+        <!-- Giant steel door with a padlock, need code using Calender and Book -->
+        <div class="doorSection" id="cellDoorExit">
+          <div class="theDoor">
+            <a
+              href="../Hall-Way/hallWay.html"
+              class="exitDoor"
+              id="doorToHallway"
+              ><img src="../assets/exitDoor.png" alt="Jail Door" id="exitDoor"
+            /></a>
+          </div>
+          <div class="doorPadlock passwordSolution" id="firstPuzzle">
+            <div class="padlock-icon" id="padlockIcon">
+              <img src="../assets/padlock.png" alt="Lock Image" />
+            </div>
+            <div class="padlock-popup" id="padlockPopup">
+              <div class="padlock-box">
+                <h3>Enter Combination</h3>
+                <div class="dials">
+                  <select class="dial" id="dial1">
+                    <option value="">-</option>
+                  </select>
+                  <select class="dial" id="dial2">
+                    <option value="">-</option>
+                  </select>
+                  <select class="dial" id="dial3">
+                    <option value="">-</option>
+                  </select>
+                  <select class="dial" id="dial4">
+                    <option value="">-</option>
+                  </select>
+                </div>
+                <button id="submitCombo">Unlock</button>
+                <button id="closePopup">✖</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- This section is for moving the rooms -->
+        <div class="navigationBar" id="navigationSection">
+          <div class="navigationArrow" id="arrowMoveLeft">
+            <a href="../Room-One/eastWall.html" class="mapChangeArrow">
+              <img
+                src="../assets/left-arrow.png"
+                alt="Left Stone arrow"
+                class="stoneArrows"
+                id="leftArrowPicture"
+              />
+            </a>
+          </div>
+          <div class="navigationArrow" id="arrowMoveRight">
+            <a href="./westWall.html" class="mapChangeArrow">
+              <img
+                src="/assets/right-arrow.png"
+                alt="Right Stone arrow"
+                class="stoneArrows"
+                id="rightArrowPicture"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="floorOfRoom popup dial dials pillow" id="southFloor"></div>
+      <div class="popup"></div>
+    </div>
+    <iframe
+      src="/audio.html"
+      style="display: none"
+      id="bgAudioFrame"
+      allow="autoplay"
+    >
+    </iframe>
+  </body>
 </html>
