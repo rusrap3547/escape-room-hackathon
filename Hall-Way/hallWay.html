@@ -1,73 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="hallWay.css" />
-		<link rel="stylesheet" href="../css/roomOneGlobals.css" />
-		<script src="/scripts/scripts.js"></script>
-		<script src="/scripts/hallway.js" defer></script>
-		<title>Ch.2 Hallway</title>
-	</head>
-	<body>
-		<div class="hallContainer roomBox" id="wholeHallWay">
-			<div class="hallWayContainer southWallSection" id="hallWall">
-				<div class="camera"></div>
-				<!-- TODO add functionality to doors -->
-				<div class="doorContainers doorsToRooms" id="backgroundDoors">
-					<div class="exitDoor doorSection" id="roomOneDoor">
-						<div class="doorKnob" id="firstDoorKnob">
-							<div class="doorHandle"></div>
-						</div>
-					</div>
-					<!-- TODO add monster pic + sound OR video + game over? -->
-					<div class="exitDoor doorSection" id="jumpScareDoor">
-						<div class="doorKnob leadsNowhere" id="monsterDoor">
-							<div class="doorHandle"></div>
-						</div>
-					</div>
-					<div class="exitDoor doorSection" id="secondRandomDoor">
-						<div class="leadsNowhere doorKnob" id="justAnotherDoor">
-							<div class="doorHandle"></div>
-						</div>
-					</div>
-				</div>
-				<!-- This section is for moving the rooms -->
-				<div class="navigationBar" id="navigationSection">
-					<div class="navigationArrow" id="arrowMoveLeft">
-						<a href="../Room-One/northWall.html" class="mapChangeArrow">
-							<img
-								src="../assets/up-arrow.png"
-								alt="Left Stone arrow"
-								class="stoneArrows"
-								id="leftArrowPicture"
-							/>
-						</a>
-					</div>
-					<div class="navigationArrow" id="arrowMoveRight">
-						<a href="../Exit-Room/runaway.html" class="mapChangeArrow">
-							<img
-								src="/assets/right-arrow.png"
-								alt="Right Stone arrow"
-								class="stoneArrows"
-								id="rightArrowPicture"
-							/>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="floorOfRoom" id="southFloor"></div>
-		</div>
-		<audio
-			src="/assets/Fnaf Jumpscare Sound Effect.mp3"
-			id="screamSound"
-		></audio>
-		<iframe
-			src="/audio.html"
-			style="display: none"
-			id="bgAudioFrame"
-			allow="autoplay"
-		>
-		</iframe>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="hallWay.css" />
+    <link rel="stylesheet" href="../css/roomOneGlobals.css" />
+    <script src="/scripts/scripts.js"></script>
+    <script src="/scripts/hallway.js" defer></script>
+    <title>Ch.2 Hallway</title>
+  </head>
+  <body>
+    <div class="hallContainer roomBox" id="wholeHallWay">
+      <div class="hallWayContainer southWallSection" id="hallWall">
+        <div class="camera"></div>
+        <div class="doorContainers doorsToRooms" id="backgroundDoors">
+          <div class="exitDoor doorSection" id="roomOneDoor">
+            <div class="doorKnob" id="firstDoorKnob">
+              <div class="doorHandle"></div>
+            </div>
+          </div>
+          <div class="exitDoor doorSection" id="jumpScareDoor">
+            <div class="doorKnob leadsNowhere" id="monsterDoor">
+              <div class="doorHandle"></div>
+            </div>
+          </div>
+          <div class="exitDoor doorSection" id="secondRandomDoor">
+            <div class="leadsNowhere doorKnob" id="justAnotherDoor">
+              <div class="doorHandle"></div>
+            </div>
+          </div>
+        </div>
+        <!-- This section is for moving the rooms -->
+        <div class="navigationBar" id="navigationSection">
+          <div class="navigationArrow" id="arrowMoveLeft">
+            <a href="../Room-One/northWall.html" class="mapChangeArrow">
+              <img
+                src="../assets/up-arrow.png"
+                alt="Left Stone arrow"
+                class="stoneArrows"
+                id="leftArrowPicture"
+              />
+            </a>
+          </div>
+          <div class="navigationArrow" id="arrowMoveRight">
+            <a href="../Exit-Room/runaway.html" class="mapChangeArrow">
+              <img
+                src="/assets/right-arrow.png"
+                alt="Right Stone arrow"
+                class="stoneArrows"
+                id="rightArrowPicture"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="floorOfRoom" id="southFloor"></div>
+    </div>
+    <audio
+      src="/assets/Fnaf Jumpscare Sound Effect.mp3"
+      id="screamSound"
+    ></audio>
+    <iframe
+      src="/audio.html"
+      style="display: none"
+      id="bgAudioFrame"
+      allow="autoplay"
+    >
+    </iframe>
+  </body>
 </html>
