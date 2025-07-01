@@ -126,16 +126,3 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-  const footstepAudio = new Audio('../assets/footStepsSound.mp3');
-  document.addEventListener('DOMContentLoaded', () => {
-    const arrows = document.querySelectorAll('img.stoneArrows');
-
-    arrows.forEach(arrow => {
-      arrow.addEventListener('click', () => {
-        footstepAudio.currentTime = 0;
-        footstepAudio.play().catch(e => {
-          console.warn('Audio play failed:', e);
-        });
-      });
-    });
-  });
